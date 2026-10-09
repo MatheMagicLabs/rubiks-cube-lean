@@ -1,8 +1,8 @@
 {"synthetic": false,
  "outputs":
- {"o": ["17086242249521477545"],
-  "i": "571106208253346402",
-  "c": "9849789550237785835"},
+ {"o": ["4511905420952691422"],
+  "i": "18065689771969258737",
+  "c": "2619059088850237477"},
  "log":
  [{"message":
    ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeG.lean -o /root/cubelean/.lake/build/lib/lean/CubeG.olean -i /root/cubelean/.lake/build/lib/lean/CubeG.ilean -c /root/cubelean/.lake/build/ir/CubeG.c --setup /root/cubelean/.lake/build/ir/CubeG.setup.json --json",
@@ -13,18 +13,22 @@
      [["cubelean/CubeG:extraDep", [["@cubelean:extraDep", "1723"]]],
       ["imports",
        [["CubeG.Gods transitive imports (legacy)", "7486974778794656926"],
-        ["CubeG.Gods:importAllArts", "15386789498619026042"]]]]],
+        ["CubeG.Gods:importAllArts", "15386789498619026042"],
+        ["CubeG.Solver transitive imports (legacy)", "18334500628039913240"],
+        ["CubeG.Solver:importAllArts", "1338980548093914966"]]]]],
     ["libs",
      [["import dynlibs",
        [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
         ["/root/cubelean/.lake/build/lib/lean/CubeG_Gods.so",
-         "13527259959394845488"]]],
+         "13527259959394845488"],
+        ["/root/cubelean/.lake/build/lib/lean/CubeG_Solver.so",
+         "6139818393762196319"]]],
       ["package external libraries", "1723"],
       ["module dynlibs", "1723"],
       ["module plugins", "1723"]]]]],
   ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
    "5786258275165720599"],
-  ["/root/cubelean/CubeG.lean", "6412895710253124495"],
+  ["/root/cubelean/CubeG.lean", "5378975368996866254"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "2653816750020989078"}
+ "depHash": "12909942189249400393"}
