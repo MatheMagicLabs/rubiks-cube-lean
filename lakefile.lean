@@ -14,3 +14,7 @@ lean_lib CubeP where
 /-- generic God's-number tables (2×2×2), precompiled. -/
 lean_lib CubeG where
   precompileModules := true
+
+/-- Kociemba phase 2 tables (precompiled). -/
+lean_lib CubeH where
+  precompileModules := true
