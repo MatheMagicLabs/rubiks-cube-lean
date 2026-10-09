@@ -1,0 +1,36 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["538982672215816695"],
+  "i": "4810741474394490881",
+  "c": "5720820137148834849"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/Cube/SquareProof.lean -o /root/cubelean/.lake/build/lib/lean/Cube/SquareProof.olean -i /root/cubelean/.lake/build/lib/lean/Cube/SquareProof.ilean -c /root/cubelean/.lake/build/ir/Cube/SquareProof.c --setup /root/cubelean/.lake/build/ir/Cube/SquareProof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "Cube/SquareProof.lean:105:0: 'square_group_gods_number' depends on axioms: [propext,\n Classical.choice,\n Lean.ofReduceBool,\n Lean.trustCompiler,\n Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["Cube.SquareProof:deps",
+   [["deps",
+     [["cubelean/Cube:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.SquareThm transitive imports (legacy)", "8863569233786850575"],
+        ["Cube.SquareThm:importAllArts", "7410990815047589609"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
+         "18073167943710016585"],
+        ["/root/cubelean/.lake/build/lib/lean/Cube_Square.so",
+         "989634387206004846"],
+        ["/root/cubelean/.lake/build/lib/lean/Cube_SquareThm.so",
+         "17757811733917572267"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/Cube/SquareProof.lean", "7074338937532417435"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "17323797498165027823"}

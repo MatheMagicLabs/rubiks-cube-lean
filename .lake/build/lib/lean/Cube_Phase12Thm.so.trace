@@ -1,0 +1,18 @@
+{"synthetic": false,
+ "outputs": "12001183165732315572",
+ "log":
+ [{"message":
+   ".> /root/lean/lean-4.23.0-linux/bin/clang -shared -o /root/cubelean/.lake/build/lib/lean/Cube_Phase12Thm.so /root/cubelean/.lake/build/ir/Cube/Phase12Thm.c.o.export -L /root/lean/lean-4.23.0-linux/lib/lean --sysroot /root/lean/lean-4.23.0-linux -L /root/lean/lean-4.23.0-linux/lib -L /root/lean/lean-4.23.0-linux/lib/glibc -lc -lc_nonshared -Wl,--as-needed -l:ld.so -Wl,--no-as-needed -lpthread_nonshared -Wl,--as-needed -Wl,-Bstatic -lgmp -lunwind -luv -Wl,-Bdynamic -Wl,--no-as-needed -fuse-ld=lld -Wl,-Bstatic -lc++ -lc++abi -Wl,-Bdynamic -Wl,--as-needed -lLake_shared -Wl,--no-as-needed -Wl,-Bsymbolic -Wl,--as-needed -lgmp -luv -lpthread -ldl -lrt -Wl,--no-as-needed -lm -ldl -pthread",
+   "level": "trace"}],
+ "inputs":
+ [["linkObjs",
+   [["/root/cubelean/.lake/build/ir/Cube/Phase12Thm.c.o.export",
+     "2773152778054922108"]]],
+  ["linkLibs",
+   [["/root/cubelean/.lake/build/lib/lean/Cube_Phase12.so",
+     "727834979134234378"]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["traceArgs: #[]", "1723"],
+  ["x86_64-unknown-linux-gnu", "6026072021563112488"]],
+ "depHash": "10844581002547988455"}

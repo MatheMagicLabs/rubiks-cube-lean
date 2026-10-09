@@ -1,0 +1,10 @@
+{"plugins":
+ ["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Square.so"],
+ "options": {},
+ "name": "Cube.SquareThm",
+ "isModule": false,
+ "importArts":
+ {"Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+ "dynlibs": []}

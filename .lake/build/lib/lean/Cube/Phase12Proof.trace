@@ -1,0 +1,39 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["6613406181303884752"],
+  "i": "12907050147980751786",
+  "c": "13500199944170989811"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/Cube/Phase12Proof.lean -o /root/cubelean/.lake/build/lib/lean/Cube/Phase12Proof.olean -i /root/cubelean/.lake/build/lib/lean/Cube/Phase12Proof.ilean -c /root/cubelean/.lake/build/ir/Cube/Phase12Proof.c --setup /root/cubelean/.lake/build/ir/Cube/Phase12Proof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "Cube/Phase12Proof.lean:82:0: 'phase1_eo' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"},
+  {"message":
+   "Cube/Phase12Proof.lean:140:0: 'phase2_dr' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["Cube.Phase12Proof:deps",
+   [["deps",
+     [["cubelean/Cube:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.Phase12Thm transitive imports (legacy)", "15932613805187025473"],
+        ["Cube.Phase12Thm:importAllArts", "10007453589409542249"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
+         "18073167943710016585"],
+        ["/root/cubelean/.lake/build/lib/lean/Cube_Phase12.so",
+         "727834979134234378"],
+        ["/root/cubelean/.lake/build/lib/lean/Cube_Phase12Thm.so",
+         "12001183165732315572"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/Cube/Phase12Proof.lean", "1601876786996308374"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "9852155712342265933"}
