@@ -1,0 +1,10 @@
+{"plugins":
+ ["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Parity.so"],
+ "options": {},
+ "name": "Cube.SwapLemmas",
+ "isModule": false,
+ "importArts":
+ {"Cube.Parity": ["/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"],
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+ "dynlibs": []}
