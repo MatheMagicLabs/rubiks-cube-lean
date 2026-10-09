@@ -1,0 +1,36 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["10100952031145960235"],
+  "i": "423031386436305551",
+  "c": "16772162559979896957"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Final.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Final.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Final.ilean -c /root/cubelean/.lake/build/ir/CubeP/Final.c --setup /root/cubelean/.lake/build/ir/CubeP/Final.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/Final.lean:136:0: 'thistlethwaite_45' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.Final:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.Phase34Proof transitive imports (legacy)",
+         "10124228810436807176"],
+        ["CubeP.Phase34Proof:importAllArts", "17500305721317941305"],
+        ["CubeP.Phase4Thm transitive imports (legacy)", "3870652700856899915"],
+        ["CubeP.Phase4Thm:importAllArts", "16431322692266561565"],
+        ["Cube.ParityLaw transitive imports (legacy)", "3952128208562722286"],
+        ["Cube.ParityLaw:importAllArts", "18237684458796453755"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "355482415366323819"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Final.lean", "13280055017173212182"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "10869027220278013"}

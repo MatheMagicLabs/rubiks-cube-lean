@@ -1,0 +1,25 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["14512434110999472781"],
+  "i": "17755030689332528089",
+  "c": "9759965318384626305"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/Cube/Select.lean -o /root/cubelean/.lake/build/lib/lean/Cube/Select.olean -i /root/cubelean/.lake/build/lib/lean/Cube/Select.ilean -c /root/cubelean/.lake/build/ir/Cube/Select.c --setup /root/cubelean/.lake/build/ir/Cube/Select.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["Cube.Select:deps",
+   [["deps",
+     [["cubelean/Cube:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports", "1723"]]],
+    ["libs",
+     [["import dynlibs", "1723"],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/Cube/Select.lean", "18247333234874404554"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "5338280869519861732"}

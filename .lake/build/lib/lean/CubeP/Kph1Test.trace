@@ -1,0 +1,35 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["10670666522073125553"],
+  "i": "6152117971395668731",
+  "c": "6098703288861249912"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Kph1Test.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Kph1Test.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Kph1Test.ilean -c /root/cubelean/.lake/build/ir/CubeP/Kph1Test.c --setup /root/cubelean/.lake/build/ir/CubeP/Kph1Test.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/Kph1Test.lean:2:0: [2048, 2187, 495, 36864, 39366, 8910, 1802052609]",
+   "level": "info"},
+  {"message": "CubeP/Kph1Test.lean:3:0: true", "level": "info"},
+  {"message":
+   "CubeP/Kph1Test.lean:4:0: [1801561814, 1714432265, 1802052609, 1801561814, 1801561814]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.Kph1Test:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.Kph1 transitive imports (legacy)", "7486974778794656926"],
+        ["Cube.Kph1:importAllArts", "2153715441836930978"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "355482415366323819"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Kph1Test.lean", "14457464397174709103"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "12184109371473787435"}

@@ -1,0 +1,11 @@
+{"plugins": ["/root/cubelean/.lake/build/lib/libCube.so"],
+ "options": {},
+ "name": "CubeP.Phase34Thm",
+ "isModule": false,
+ "importArts":
+ {"Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
+  "Cube.Phase34": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase34.olean"],
+  "Cube.Phase12": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"],
+  "Cube.Parity": ["/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"],
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+ "dynlibs": []}

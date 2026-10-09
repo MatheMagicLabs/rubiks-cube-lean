@@ -1,0 +1,30 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["15452600881272420602"],
+  "i": "4053774602618864680",
+  "c": "17781269002764063976"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Phase34Thm.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Phase34Thm.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Phase34Thm.ilean -c /root/cubelean/.lake/build/ir/CubeP/Phase34Thm.c --setup /root/cubelean/.lake/build/ir/CubeP/Phase34Thm.setup.json --json",
+   "level": "trace"},
+  {"message": "CubeP/Phase34Thm.lean:2:0: [40320, 34650, 70, 96, 2822400, 13]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.Phase34Thm:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.Phase34 transitive imports (legacy)", "14342590046334666554"],
+        ["Cube.Phase34:importAllArts", "12067037613857476605"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "355482415366323819"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Phase34Thm.lean", "6926727109709666051"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "9960710278288936453"}

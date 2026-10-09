@@ -1,24 +1,26 @@
 {"plugins":
  ["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
   "/root/cubelean/.lake/build/lib/lean/Cube_Square.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_SquareThm.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_SquareProof.so",
   "/root/cubelean/.lake/build/lib/lean/Cube_Phase12.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_Phase12Thm.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_Phase12Proof.so"],
+  "/root/cubelean/.lake/build/lib/lean/Cube_Parity.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Phase34.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Select.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Phase4.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_SwapLemmas.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_ParityLaw.so"],
  "options": {},
  "name": "Cube",
  "isModule": false,
  "importArts":
- {"Cube.SquareThm":
-  ["/root/cubelean/.lake/build/lib/lean/Cube/SquareThm.olean"],
-  "Cube.SquareProof":
-  ["/root/cubelean/.lake/build/lib/lean/Cube/SquareProof.olean"],
+ {"Cube.SwapLemmas":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/SwapLemmas.olean"],
   "Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
-  "Cube.Phase12Thm":
-  ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12Thm.olean"],
-  "Cube.Phase12Proof":
-  ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12Proof.olean"],
+  "Cube.Select": ["/root/cubelean/.lake/build/lib/lean/Cube/Select.olean"],
+  "Cube.Phase4": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase4.olean"],
+  "Cube.Phase34": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase34.olean"],
   "Cube.Phase12": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"],
+  "Cube.ParityLaw":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/ParityLaw.olean"],
+  "Cube.Parity": ["/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"],
   "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
  "dynlibs": []}

@@ -1,0 +1,10 @@
+{"plugins": ["/root/cubelean/.lake/build/lib/libCube.so"],
+ "options": {},
+ "name": "CubeP.Phase12Proof",
+ "isModule": false,
+ "importArts":
+ {"CubeP.Phase12Thm":
+  ["/root/cubelean/.lake/build/lib/lean/CubeP/Phase12Thm.olean"],
+  "Cube.Phase12": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"],
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+ "dynlibs": []}

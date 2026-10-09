@@ -1,7 +1,9 @@
 import Cube.Model
 import Cube.Square
-import Cube.SquareThm
-import Cube.SquareProof
 import Cube.Phase12
-import Cube.Phase12Thm
-import Cube.Phase12Proof
+import Cube.Phase34
+import Cube.Phase4
+import Cube.Parity
+import Cube.SwapLemmas
+import Cube.ParityLaw
+import Cube.Select

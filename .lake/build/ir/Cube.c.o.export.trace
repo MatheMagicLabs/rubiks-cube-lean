@@ -1,16 +1,16 @@
 {"synthetic": false,
- "outputs": "14268690661698533226",
+ "outputs": "15582566550018751128",
  "log":
  [{"message":
    ".> /root/lean/lean-4.23.0-linux/bin/clang -c -o /root/cubelean/.lake/build/ir/Cube.c.o.export /root/cubelean/.lake/build/ir/Cube.c -I /root/lean/lean-4.23.0-linux/include -fstack-clash-protection -fwrapv -fPIC -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /root/lean/lean-4.23.0-linux -nostdinc -isystem /root/lean/lean-4.23.0-linux/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
    "level": "trace"}],
  "inputs":
  [["Cube:c",
-   [["/root/cubelean/.lake/build/ir/Cube.c", "5806523081063189689"],
+   [["/root/cubelean/.lake/build/ir/Cube.c", "10947579070764596122"],
     ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
      "5786258275165720599"]]],
   ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
    "5786258275165720599"],
   ["traceArgs: #[-O3, -DNDEBUG, -DLEAN_EXPORTING]", "13974588697068907418"],
   ["x86_64-unknown-linux-gnu", "6026072021563112488"]],
- "depHash": "13323774821530531891"}
+ "depHash": "903987835696818363"}

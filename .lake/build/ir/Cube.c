@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Cube
-// Imports: Init Cube.Model Cube.Square Cube.SquareThm Cube.SquareProof Cube.Phase12 Cube.Phase12Thm Cube.Phase12Proof
+// Imports: Init Cube.Model Cube.Square Cube.Phase12 Cube.Phase34 Cube.Phase4 Cube.Parity Cube.SwapLemmas Cube.ParityLaw Cube.Select
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -16,11 +16,13 @@ extern "C" {
 lean_object* initialize_Init(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_Model(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_Square(uint8_t builtin, lean_object*);
-lean_object* initialize_Cube_SquareThm(uint8_t builtin, lean_object*);
-lean_object* initialize_Cube_SquareProof(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_Phase12(uint8_t builtin, lean_object*);
-lean_object* initialize_Cube_Phase12Thm(uint8_t builtin, lean_object*);
-lean_object* initialize_Cube_Phase12Proof(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_Phase34(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_Phase4(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_Parity(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_SwapLemmas(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_ParityLaw(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_Select(uint8_t builtin, lean_object*);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Cube(uint8_t builtin, lean_object* w) {
 lean_object * res;
@@ -35,19 +37,25 @@ lean_dec_ref(res);
 res = initialize_Cube_Square(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Cube_SquareThm(builtin, lean_io_mk_world());
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
-res = initialize_Cube_SquareProof(builtin, lean_io_mk_world());
-if (lean_io_result_is_error(res)) return res;
-lean_dec_ref(res);
 res = initialize_Cube_Phase12(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Cube_Phase12Thm(builtin, lean_io_mk_world());
+res = initialize_Cube_Phase34(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_Cube_Phase12Proof(builtin, lean_io_mk_world());
+res = initialize_Cube_Phase4(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_Parity(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_SwapLemmas(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_ParityLaw(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_Select(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));
