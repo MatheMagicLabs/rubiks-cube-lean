@@ -222,7 +222,7 @@ static lean_object* _init_l_wit3___closed__0() {
 _start:
 {
 lean_object* x_1; 
-x_1 = lean_mk_string_unchecked("B2 D2 L2 U2 L2 F2 L2 F2 R2 U2 F2 D' B2 R2 U2 L2 U' R2 U2 F2 U' R2", 65, 65);
+x_1 = lean_mk_string_unchecked("D2 R2 F2 L2 U2 L2 F2 U2 B2 D2 F2 D' F2 U' L2 U B2 U' F2 U F2 U' R2 U'", 69, 69);
 return x_1;
 }
 }

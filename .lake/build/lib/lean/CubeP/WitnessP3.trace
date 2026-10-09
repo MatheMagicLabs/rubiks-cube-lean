@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["8648202261823004779"],
+  "i": "7475357603338074799",
+  "c": "1043739047093073264"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/WitnessP3.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/WitnessP3.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/WitnessP3.ilean -c /root/cubelean/.lake/build/ir/CubeP/WitnessP3.c --setup /root/cubelean/.lake/build/ir/CubeP/WitnessP3.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/WitnessP3.lean:27:0: [\"P3 dist 13 solved true w0ok true w0: D2 R2 F2 L2 U2 L2 F2 U2 B2 D2 F2 D' F2 U' L2 U B2 U' F2 U F2 U' R2 U'\",\n \"P3 dist 13 solved true w0ok true w0: F2 U2 B2 D2 L2 B2 R2 U2 L2 F2 D' F2 R2 U2 L2 U R2 U2 F2 U' R2 F2 U'\",\n \"P3 dist 13 solved true w0ok true w0: U2 L2 D2 B2 L2 B2 L2 D2 F2 U2 F2 U2 U' F2 U R2 U2 F2 U' L2 U F2 U2 R2 U'\",\n \"P3 dist 13 solved true w0ok true w0: F2 R2 F2 L2 F2 D2 L2 F2 U2 F2 U2 R2 U2 U' L2 U B2 U2 R2 U' F2 U' F2 U2 R2 U'\",\n \"P3 dist 13 solved true w0ok true w0: U2 F2 R2 F2 L2 U2 R2 F2 U2 R2 U2 U' F2 U R2 U2 F2 U' L2 U F2 U2 R2 U'\"]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.WitnessP3:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeG.WitnessT transitive imports (legacy)", "7399655256603375477"],
+        ["CubeG.WitnessT:importAllArts", "15488747654405716791"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "16274011246180389074"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/WitnessP3.lean", "10098081643947154608"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "3714048097928912730"}

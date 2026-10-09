@@ -1,8 +1,8 @@
 {"synthetic": false,
  "outputs":
- {"o": ["4636397618321060943"],
-  "i": "12257037705773446859",
-  "c": "3462079363159770872"},
+ {"o": ["17377825591256906322"],
+  "i": "5581418874825120877",
+  "c": "10084451101722225461"},
  "log":
  [{"message":
    ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/LowerT.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/LowerT.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/LowerT.ilean -c /root/cubelean/.lake/build/ir/CubeP/LowerT.c --setup /root/cubelean/.lake/build/ir/CubeP/LowerT.setup.json --json",
@@ -26,7 +26,7 @@
       ["module plugins", "1723"]]]]],
   ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
    "5786258275165720599"],
-  ["/root/cubelean/CubeP/LowerT.lean", "15479739787940022099"],
+  ["/root/cubelean/CubeP/LowerT.lean", "15434346213051321193"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "1816801409802049148"}
+ "depHash": "8314742027782076187"}

@@ -1,0 +1,44 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["3753704320152172699"],
+  "i": "16251883305883056476",
+  "c": "13016131547068371101"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/LowerTProof.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/LowerTProof.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/LowerTProof.ilean -c /root/cubelean/.lake/build/ir/CubeP/LowerTProof.c --setup /root/cubelean/.lake/build/ir/CubeP/LowerTProof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/LowerTProof.lean:136:0: 'thistle_phase1_lower' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"},
+  {"message":
+   "CubeP/LowerTProof.lean:137:0: 'thistle_phase2_lower' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"},
+  {"message":
+   "CubeP/LowerTProof.lean:138:0: 'thistle_phase3_lower' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.LowerTProof:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.LowerTThm transitive imports (legacy)", "1914422441683396750"],
+        ["CubeP.LowerTThm:importAllArts", "12801166159922304304"],
+        ["CubeP.Phase34Proof transitive imports (legacy)",
+         "10124228810436807176"],
+        ["CubeP.Phase34Proof:importAllArts", "17500305721317941305"],
+        ["CubeP.Phase4Thm transitive imports (legacy)", "3870652700856899915"],
+        ["CubeP.Phase4Thm:importAllArts", "16431322692266561565"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "16274011246180389074"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/LowerTProof.lean", "13543173600334547680"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "6436883068552876066"}

@@ -11,7 +11,7 @@ def dOf {K : Type} [BEq K] [Hashable K] (t : HashMap K (Option (List Nat))) (k :
   | _ => 0
 
 def wit2 : List Nat := parseAlg "F2 U2 R2 D2 R2 B2 L2 F2 R2 D2 D' B2 R2 U F2 U2 R2 U' L2 U R' F2 D F2 U' L2 U L' D' U'"
-def wit3 : List Nat := parseAlg "B2 D2 L2 U2 L2 F2 L2 F2 R2 U2 F2 D' B2 R2 U2 L2 U' R2 U2 F2 U' R2"
+def wit3 : List Nat := parseAlg "D2 R2 F2 L2 U2 L2 F2 U2 B2 D2 F2 D' F2 U' L2 U B2 U' F2 U F2 U' R2 U'"
 
 def p1LowOk : Bool :=
   eoTable.toList.all (fun p => allMoves.all (fun m => decide (dOf eoTable p.1 ≤ dOf eoTable (eoAct p.1 m) + 1))) &&
