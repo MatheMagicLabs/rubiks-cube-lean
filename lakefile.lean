@@ -5,3 +5,6 @@ package cubelean where
 @[default_target]
 lean_lib Cube where
   precompileModules := true
+
+lean_lib CubeProof where
+  roots := #[`CubeProof]

@@ -1,0 +1,25 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["12992883886363533180"],
+  "i": "14315599067428721948",
+  "c": "7919961670773676623"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/Cube/LazyC.lean -o /root/cubelean/.lake/build/lib/lean/Cube/LazyC.olean -i /root/cubelean/.lake/build/lib/lean/Cube/LazyC.ilean -c /root/cubelean/.lake/build/ir/Cube/LazyC.c --setup /root/cubelean/.lake/build/ir/Cube/LazyC.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["Cube.LazyC:deps",
+   [["deps",
+     [["cubelean/Cube:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports", "1723"]]],
+    ["libs",
+     [["import dynlibs", "1723"],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/Cube/LazyC.lean", "6894116736149258412"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "1554055560774917524"}

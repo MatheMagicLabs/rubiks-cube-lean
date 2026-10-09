@@ -1,0 +1,1 @@
+{"version":4,"references":{"{\"c\":{\"n\":\"rfl\",\"m\":\"Init.Prelude\"}}":{"usages":[[1,25,1,28]],"definition":null},"{\"c\":{\"n\":\"lazyD\",\"m\":\"Cube.LazyD\"}}":{"usages":[],"definition":[1,8,1,13]}},"module":"Cube.LazyD","directImports":[["Cube.LazyC",false,false,false]]}

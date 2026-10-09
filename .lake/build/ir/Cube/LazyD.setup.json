@@ -1,0 +1,7 @@
+{"plugins": ["/root/cubelean/.lake/build/lib/lean/Cube_LazyC.so"],
+ "options": {},
+ "name": "Cube.LazyD",
+ "isModule": false,
+ "importArts":
+ {"Cube.LazyC": ["/root/cubelean/.lake/build/lib/lean/Cube/LazyC.olean"]},
+ "dynlibs": []}

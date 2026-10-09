@@ -1,1 +1,1 @@
-{"version":4,"references":{},"module":"Cube","directImports":[["Cube.Model",false,false,false],["Cube.Square",false,false,false],["Cube.SquareThm",false,false,false]]}
+{"version":4,"references":{},"module":"Cube","directImports":[["Cube.Model",false,false,false],["Cube.Square",false,false,false],["Cube.SquareThm",false,false,false],["Cube.SquareProof",false,false,false],["Cube.Phase12",false,false,false],["Cube.Phase12Thm",false,false,false],["Cube.Phase12Proof",false,false,false]]}

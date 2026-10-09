@@ -1,7 +1,7 @@
 {"synthetic": false,
  "outputs":
- {"o": ["6613406181303884752"],
-  "i": "12907050147980751786",
+ {"o": ["5892075847225292901"],
+  "i": "8245053415718241990",
   "c": "13500199944170989811"},
  "log":
  [{"message":
@@ -18,22 +18,22 @@
    [["deps",
      [["cubelean/Cube:extraDep", [["@cubelean:extraDep", "1723"]]],
       ["imports",
-       [["Cube.Phase12Thm transitive imports (legacy)", "15932613805187025473"],
-        ["Cube.Phase12Thm:importAllArts", "10007453589409542249"]]]]],
+       [["Cube.Phase12Thm transitive imports (legacy)", "4650252777649904887"],
+        ["Cube.Phase12Thm:importAllArts", "9163616063896286404"]]]]],
     ["libs",
      [["import dynlibs",
        [["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
          "18073167943710016585"],
         ["/root/cubelean/.lake/build/lib/lean/Cube_Phase12.so",
-         "727834979134234378"],
+         "7296264108384299595"],
         ["/root/cubelean/.lake/build/lib/lean/Cube_Phase12Thm.so",
-         "12001183165732315572"]]],
+         "5987477319562464544"]]],
       ["package external libraries", "1723"],
       ["module dynlibs", "1723"],
       ["module plugins", "1723"]]]]],
   ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
    "5786258275165720599"],
-  ["/root/cubelean/Cube/Phase12Proof.lean", "1601876786996308374"],
+  ["/root/cubelean/Cube/Phase12Proof.lean", "18426790426981998935"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "9852155712342265933"}
+ "depHash": "18319834420462510831"}

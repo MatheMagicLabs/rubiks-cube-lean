@@ -1,8 +1,8 @@
 {"synthetic": false,
  "outputs":
- {"o": ["1059873133431586061"],
-  "i": "8639164820257624441",
-  "c": "7550775663511359012"},
+ {"o": ["2363935641445736104"],
+  "i": "16612822516661206910",
+  "c": "6015773233574555243"},
  "log":
  [{"message":
    ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/Cube/Phase12.lean -o /root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean -i /root/cubelean/.lake/build/lib/lean/Cube/Phase12.ilean -c /root/cubelean/.lake/build/ir/Cube/Phase12.c --setup /root/cubelean/.lake/build/ir/Cube/Phase12.setup.json --json",
@@ -23,7 +23,7 @@
       ["module plugins", "1723"]]]]],
   ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
    "5786258275165720599"],
-  ["/root/cubelean/Cube/Phase12.lean", "10585318926610147105"],
+  ["/root/cubelean/Cube/Phase12.lean", "12202383909993437924"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "1411619414908506189"}
+ "depHash": "11833059953866433874"}

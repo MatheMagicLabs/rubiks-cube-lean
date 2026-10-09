@@ -82,28 +82,28 @@ theorem phase1_eo (w : List Nat) (hw : ∀ m ∈ w, m < 18) :
 #print axioms phase1_eo
 
 -- ---------- phase 2 ----------
-theorem k2_parts : (k2Table.toList.all (fun p => k2EntryOk p.1 p.2) = true) ∧ k2Table.contains k2Start = true := by
-  have h := k2Check_true; unfold k2Check at h; rw [Bool.and_eq_true] at h; exact h
+theorem k2_parts : ((k2TableF ()).toList.all (fun p => k2EntryOkW (k2TableF ()) p.1 p.2) = true) ∧ (k2TableF ()).contains k2Start = true := by
+  have h := k2Check_true; unfold k2CheckF k2CheckW at h; rw [Bool.and_eq_true] at h; exact h
 
-theorem k2_entry {k : K2} {o : Option (List Nat)} (hk : k2Table[k]? = some o) :
+theorem k2_entry {k : K2} {o : Option (List Nat)} (hk : (k2TableF ())[k]? = some o) :
     ∃ w, o = some w ∧ w.length ≤ 10 ∧ (∀ m ∈ w, m ∈ g1Moves) ∧ k2ActList k w = k2Start ∧
-      ∀ m ∈ allMoves, k2Table.contains (k2Act k m) = true := by
-  have hm : (k, o) ∈ k2Table.toList := (HashMap.mem_toList_iff_getElem?_eq_some).2 hk
+      ∀ m ∈ allMoves, (k2TableF ()).contains (k2Act k m) = true := by
+  have hm : (k, o) ∈ (k2TableF ()).toList := (HashMap.mem_toList_iff_getElem?_eq_some).2 hk
   have ok := (List.all_eq_true.1 k2_parts.1) (k, o) hm
   cases o with
-  | none => exact absurd ok (by simp [k2EntryOk])
+  | none => exact absurd ok (by simp [k2EntryOkW])
   | some w =>
-    simp only [k2EntryOk, Bool.and_eq_true, decide_eq_true_eq] at ok
+    simp only [k2EntryOkW, Bool.and_eq_true, decide_eq_true_eq] at ok
     obtain ⟨⟨⟨h1, h2⟩, h3⟩, h4⟩ := ok
     refine ⟨w, rfl, h1, ?_, h3, List.all_eq_true.1 h4⟩
     intro m hm; exact List.contains_iff_mem.1 ((List.all_eq_true.1 h2) m hm)
 
-theorem k2_some {k : K2} (h : k2Table.contains k = true) : ∃ o, k2Table[k]? = some o := by
+theorem k2_some {k : K2} (h : (k2TableF ()).contains k = true) : ∃ o, (k2TableF ())[k]? = some o := by
   rw [HashMap.contains_eq_isSome_getElem?] at h
   exact Option.isSome_iff_exists.1 h
 
 theorem k2_reach (w : List Nat) (hw : ∀ m ∈ w, m < 18) :
-    ∀ x : St, k2Table.contains (key2 x) = true → k2Table.contains (key2 (applyList x w)) = true := by
+    ∀ x : St, (k2TableF ()).contains (key2 x) = true → (k2TableF ()).contains (key2 (applyList x w)) = true := by
   induction w with
   | nil => intro x hx; exact hx
   | cons h w ih =>
@@ -130,7 +130,7 @@ theorem key2_start : key2 St.id = k2Start := rfl
 theorem phase2_dr (w : List Nat) (hw : ∀ m ∈ w, m < 18) (heo : (eval w).eo = eoZero) :
     ∃ w', w'.length ≤ 10 ∧ (∀ m ∈ w', m ∈ g1Moves) ∧
       (applyList (eval w) w').eo = eoZero ∧ key2 (applyList (eval w) w') = key2 St.id := by
-  have hc : k2Table.contains (key2 (eval w)) = true := k2_reach w hw St.id (by rw [key2_start]; exact k2_parts.2)
+  have hc : (k2TableF ()).contains (key2 (eval w)) = true := k2_reach w hw St.id (by rw [key2_start]; exact k2_parts.2)
   obtain ⟨o, ho⟩ := k2_some hc
   obtain ⟨w', rfl, h1, h2, h3, -⟩ := k2_entry ho
   refine ⟨w', h1, h2, ?_, ?_⟩

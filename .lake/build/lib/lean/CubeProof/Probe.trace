@@ -1,0 +1,31 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["14131390159151184624"],
+  "i": "8325696772174932337",
+  "c": "2415141165683635789"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeProof/Probe.lean -o /root/cubelean/.lake/build/lib/lean/CubeProof/Probe.olean -i /root/cubelean/.lake/build/lib/lean/CubeProof/Probe.ilean -c /root/cubelean/.lake/build/ir/CubeProof/Probe.c --setup /root/cubelean/.lake/build/ir/CubeProof/Probe.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["CubeProof.Probe:deps",
+   [["deps",
+     [["cubelean/CubeProof:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.Phase12Proof transitive imports (legacy)",
+         "1560645549804018200"],
+        ["Cube.Phase12Proof:importAllArts", "2199740044370121444"],
+        ["Cube.SquareProof transitive imports (legacy)", "5228579524434416659"],
+        ["Cube.SquareProof:importAllArts", "6888067014684624196"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "17914630318876335061"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeProof/Probe.lean", "740022807620458470"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "704212746873755147"}

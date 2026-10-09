@@ -1,13 +1,24 @@
 {"plugins":
  ["/root/cubelean/.lake/build/lib/lean/Cube_Model.so",
   "/root/cubelean/.lake/build/lib/lean/Cube_Square.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_SquareThm.so"],
+  "/root/cubelean/.lake/build/lib/lean/Cube_SquareThm.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_SquareProof.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Phase12.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Phase12Thm.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Phase12Proof.so"],
  "options": {},
  "name": "Cube",
  "isModule": false,
  "importArts":
  {"Cube.SquareThm":
   ["/root/cubelean/.lake/build/lib/lean/Cube/SquareThm.olean"],
+  "Cube.SquareProof":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/SquareProof.olean"],
   "Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
+  "Cube.Phase12Thm":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12Thm.olean"],
+  "Cube.Phase12Proof":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12Proof.olean"],
+  "Cube.Phase12": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"],
   "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
  "dynlibs": []}

@@ -15,10 +15,11 @@ extern "C" {
 #endif
 LEAN_EXPORT uint8_t l_g1KeepsEO__true___nativeDecide__1__1;
 LEAN_EXPORT uint8_t l_k2Check__true___nativeDecide__1__1;
+static uint8_t l_k2Check__true___nativeDecide__1__1___closed__0;
 extern uint8_t l_g1KeepsEO;
+uint8_t l_k2CheckF(lean_object*);
 extern uint8_t l_eoCheck;
 LEAN_EXPORT uint8_t l_eoCheck__true___nativeDecide__1__1;
-extern uint8_t l_k2Check;
 static uint8_t _init_l_eoCheck__true___nativeDecide__1__1() {
 _start:
 {
@@ -27,11 +28,20 @@ x_1 = l_eoCheck;
 return x_1;
 }
 }
+static uint8_t _init_l_k2Check__true___nativeDecide__1__1___closed__0() {
+_start:
+{
+lean_object* x_1; uint8_t x_2; 
+x_1 = lean_box(0);
+x_2 = l_k2CheckF(x_1);
+return x_2;
+}
+}
 static uint8_t _init_l_k2Check__true___nativeDecide__1__1() {
 _start:
 {
 uint8_t x_1; 
-x_1 = l_k2Check;
+x_1 = l_k2Check__true___nativeDecide__1__1___closed__0;
 return x_1;
 }
 }
@@ -57,6 +67,7 @@ res = initialize_Cube_Phase12(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 l_eoCheck__true___nativeDecide__1__1 = _init_l_eoCheck__true___nativeDecide__1__1();
+l_k2Check__true___nativeDecide__1__1___closed__0 = _init_l_k2Check__true___nativeDecide__1__1___closed__0();
 l_k2Check__true___nativeDecide__1__1 = _init_l_k2Check__true___nativeDecide__1__1();
 l_g1KeepsEO__true___nativeDecide__1__1 = _init_l_g1KeepsEO__true___nativeDecide__1__1();
 return lean_io_result_mk_ok(lean_box(0));

@@ -1,6 +1,7 @@
 import Cube.Model
 import Std.Data.HashMap
 open Std
+set_option compiler.extract_closed false
 
 /-! Coordinates for Thistlethwaite phases 1 (EO) and 2 (CO + E-slice), with move actions that are
 definitionally (phase 1) or provably (phase 2) the projections of `apply`. -/
@@ -69,17 +70,18 @@ def eoCheck : Bool := eoTable.toList.all (fun p => eoEntryOk p.1 p.2) && eoTable
 abbrev K2 := Array Nat × Array Nat
 def k2Act (k : K2) (m : Nat) : K2 := (coAct k.1 m, maskAct k.2 m)
 def k2Start : K2 := (St.id.co, maskOf St.id.ep)
-def k2Table : HashMap K2 (Option (List Nat)) :=
+def k2TableF (_ : Unit) : HashMap K2 (Option (List Nat)) :=
   solveTable k2Start k2Act allMoves g1Moves (fun k => k == k2Start) 10
 def k2ActList (k : K2) (w : List Nat) : K2 := w.foldl k2Act k
-def k2EntryOk (k : K2) (o : Option (List Nat)) : Bool :=
+def k2EntryOkW (t : HashMap K2 (Option (List Nat))) (k : K2) (o : Option (List Nat)) : Bool :=
   match o with
   | none => false
   | some w => decide (w.length ≤ 10) && w.all (fun m => g1Moves.contains m) && decide (k2ActList k w = k2Start) &&
-      allMoves.all (fun m => k2Table.contains (k2Act k m))
-def k2Check : Bool := k2Table.toList.all (fun p => k2EntryOk p.1 p.2) && k2Table.contains k2Start
+      allMoves.all (fun m => t.contains (k2Act k m))
+def k2CheckW (t : HashMap K2 (Option (List Nat))) : Bool := t.toList.all (fun p => k2EntryOkW t p.1 p.2) && t.contains k2Start
+def k2CheckF (_ : Unit) : Bool := k2CheckW (k2TableF ())
 def g1KeepsEO : Bool := g1Moves.all (fun m => decide (eoAct eoZero m = eoZero))
 
-def stats : List Nat := [eoTable.size, k2Table.size,
+def stats (_ : Unit) : List Nat := let k2Table := k2TableF (); [eoTable.size, k2Table.size,
   eoTable.fold (fun a _ o => max a ((o.map List.length).getD 99)) 0,
   k2Table.fold (fun a _ o => max a ((o.map List.length).getD 99)) 0]
