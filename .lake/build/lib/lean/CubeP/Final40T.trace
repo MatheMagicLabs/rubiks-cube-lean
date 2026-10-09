@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["10974418039194945699"],
+  "i": "11686916082861803110",
+  "c": "14708640376384472602"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Final40T.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Final40T.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Final40T.ilean -c /root/cubelean/.lake/build/ir/CubeP/Final40T.c --setup /root/cubelean/.lake/build/ir/CubeP/Final40T.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/Final40T.lean:26:0: 'upper_bound_40' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Lean.ofReduceBool,\n Lean.trustCompiler,\n Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.Final40T:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.Kph1ProofT transitive imports (legacy)", "5859753248752593174"],
+        ["CubeP.Kph1ProofT:importAllArts", "1362092451027784013"],
+        ["CubeP.Final transitive imports (legacy)", "17727267606890293104"],
+        ["CubeP.Final:importAllArts", "746114920581239914"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "355482415366323819"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Final40T.lean", "18009880550771902709"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "16461289100800698561"}

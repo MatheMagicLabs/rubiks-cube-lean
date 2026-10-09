@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: Cube
-// Imports: Init Cube.Model Cube.Square Cube.Phase12 Cube.Phase34 Cube.Phase4 Cube.Parity Cube.SwapLemmas Cube.ParityLaw Cube.Select
+// Imports: Init Cube.Model Cube.Square Cube.Phase12 Cube.Phase34 Cube.Phase4 Cube.Parity Cube.SwapLemmas Cube.ParityLaw Cube.Select Cube.Kph1 Cube.BenchDefs
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -23,6 +23,8 @@ lean_object* initialize_Cube_Parity(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_SwapLemmas(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_ParityLaw(uint8_t builtin, lean_object*);
 lean_object* initialize_Cube_Select(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_Kph1(uint8_t builtin, lean_object*);
+lean_object* initialize_Cube_BenchDefs(uint8_t builtin, lean_object*);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_Cube(uint8_t builtin, lean_object* w) {
 lean_object * res;
@@ -56,6 +58,12 @@ res = initialize_Cube_ParityLaw(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_Cube_Select(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_Kph1(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_Cube_BenchDefs(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));

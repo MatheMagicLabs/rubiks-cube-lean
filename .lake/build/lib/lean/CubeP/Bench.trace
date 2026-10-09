@@ -1,0 +1,30 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["7913319719397183603"],
+  "i": "8112688172558199932",
+  "c": "8782800298603167452"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Bench.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Bench.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Bench.ilean -c /root/cubelean/.lake/build/ir/CubeP/Bench.c --setup /root/cubelean/.lake/build/ir/CubeP/Bench.setup.json --json",
+   "level": "trace"},
+  {"message": "CubeP/Bench.lean:2:0: 300000000", "level": "info"},
+  {"message": "CubeP/Bench.lean:3:0: 269985122", "level": "info"}],
+ "inputs":
+ [["CubeP.Bench:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["Cube.BenchDefs transitive imports (legacy)", "13755001835207546176"],
+        ["Cube.BenchDefs:importAllArts", "16879661294526584065"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Bench.lean", "9658966255430706787"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "11726700876443917619"}

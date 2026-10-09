@@ -7,3 +7,5 @@ import Cube.Parity
 import Cube.SwapLemmas
 import Cube.ParityLaw
 import Cube.Select
+import Cube.Kph1
+import Cube.BenchDefs

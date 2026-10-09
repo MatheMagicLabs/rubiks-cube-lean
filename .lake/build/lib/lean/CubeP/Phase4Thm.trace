@@ -16,7 +16,7 @@
         ["Cube.Phase4:importAllArts", "18418064800459787043"]]]]],
     ["libs",
      [["import dynlibs",
-       [["/root/cubelean/.lake/build/lib/libCube.so", "355482415366323819"]]],
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"]]],
       ["package external libraries", "1723"],
       ["module dynlibs", "1723"],
       ["module plugins", "1723"]]]]],
@@ -25,4 +25,4 @@
   ["/root/cubelean/CubeP/Phase4Thm.lean", "13894946096868796483"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "1795949574755253883"}
+ "depHash": "11015293338751225889"}

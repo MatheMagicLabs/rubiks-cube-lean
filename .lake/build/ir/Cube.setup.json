@@ -7,7 +7,9 @@
   "/root/cubelean/.lake/build/lib/lean/Cube_Select.so",
   "/root/cubelean/.lake/build/lib/lean/Cube_Phase4.so",
   "/root/cubelean/.lake/build/lib/lean/Cube_SwapLemmas.so",
-  "/root/cubelean/.lake/build/lib/lean/Cube_ParityLaw.so"],
+  "/root/cubelean/.lake/build/lib/lean/Cube_ParityLaw.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_Kph1.so",
+  "/root/cubelean/.lake/build/lib/lean/Cube_BenchDefs.so"],
  "options": {},
  "name": "Cube",
  "isModule": false,
@@ -22,5 +24,8 @@
   "Cube.ParityLaw":
   ["/root/cubelean/.lake/build/lib/lean/Cube/ParityLaw.olean"],
   "Cube.Parity": ["/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"],
-  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"],
+  "Cube.Kph1": ["/root/cubelean/.lake/build/lib/lean/Cube/Kph1.olean"],
+  "Cube.BenchDefs":
+  ["/root/cubelean/.lake/build/lib/lean/Cube/BenchDefs.olean"]},
  "dynlibs": []}

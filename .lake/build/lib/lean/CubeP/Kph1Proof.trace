@@ -1,0 +1,34 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["5717285316268727962"],
+  "i": "793377723817975450",
+  "c": "17033193298757115988"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/Kph1Proof.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/Kph1Proof.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/Kph1Proof.ilean -c /root/cubelean/.lake/build/ir/CubeP/Kph1Proof.c --setup /root/cubelean/.lake/build/ir/CubeP/Kph1Proof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/Kph1Proof.lean:167:0: 'kociemba_phase1' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.Kph1Proof:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.Kph1Thm transitive imports (legacy)", "13755001835207546176"],
+        ["CubeP.Kph1Thm:importAllArts", "5775962897863361327"],
+        ["CubeP.Phase34Proof transitive imports (legacy)",
+         "10124228810436807176"],
+        ["CubeP.Phase34Proof:importAllArts", "17500305721317941305"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/Kph1Proof.lean", "17116290738609124773"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "17599251790860459220"}
