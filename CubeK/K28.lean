@@ -60,10 +60,15 @@ def pairOk (kb : HashMap P Unit) (i : Nat) (w1 w2 : List Nat) : Bool :=
    let K2 := pActList idP w2
    let k := pmul (pinv K1) K2
    pmul K1 k == K2 && bndOk k && !kb.contains k)
-def pair11 (d : ByteArray) (kb : HashMap P Unit) (i : Nat) : Option (List Nat × List Nat) :=
+def pairSlow (d : ByteArray) (kb : HashMap P Unit) (i : Nat) : Option (List Nat × List Nat) :=
   let sols := (dfsW d 11 i 6 [] #[] 12).toList
   let pairs := sols.flatMap (fun a => sols.map (fun b => (a, b)))
   pairs.find? (fun p => p.1 != p.2 && pairOk kb i p.1 p.2)
+/-- first try the first two solutions found, then all pairs among up to 12 -/
+def pair11 (d : ByteArray) (kb : HashMap P Unit) (i : Nat) : Option (List Nat × List Nat) :=
+  match (dfsW d 11 i 6 [] #[] 2).toList with
+  | [a, b] => if pairOk kb i a b then some (a, b) else pairSlow d kb i
+  | _ => pairSlow d kb i
 def cert11 (d : ByteArray) (kb : HashMap P Unit) (i : Nat) : Bool :=
   match pair11 d kb i with
   | some (w1, w2) => pairOk kb i w1 w2
@@ -77,11 +82,12 @@ def words476L : List (Nat × List (List Nat)) := (words476Str.splitOn " ").map (
 def words476 : HashMap Nat (List (List Nat)) := words476L.foldl (fun h p => h.insert p.1 p.2) ∅
 
 /-- big check A (phase-1 table): every coset at distance 11 has a certified pair, every coset at 12 is listed -/
-def h3F (_ : Unit) : Bool :=
+def h3F (lo hi : Nat) : Bool :=
   let d := distF ()
   let kb := kbadF ()
-  allBelow (fun i => let v := (d.get! i).toNat;
-    (v != 11 || cert11 d kb i) && (v != 12 || words476.contains i)) NN
+  allBelow (fun i => decide (i < lo) || (let v := (d.get! i).toNat;
+    (v != 11 || cert11 d kb i) && (v != 12 || words476.contains i))) hi
+def HALF : Nat := 1108546560
 
 /-- the elements at phase-2 distance ≥ 17, from the certified phase-2 table -/
 def bad17F (d : ByteArray) : HashMap P Unit := Id.run do

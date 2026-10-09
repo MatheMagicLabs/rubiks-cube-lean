@@ -1,6 +1,7 @@
 import CubeP.Kph2Proof
 import CubeP.K28ThmA
-import CubeP.K28ThmB
+import CubeP.K28ThmB1
+import CubeP.K28ThmB2
 import CubeP.K28ThmC
 open Std
 
@@ -207,14 +208,27 @@ theorem allBelow_spec (f : Nat → Bool) : ∀ n, allBelow f n = true → ∀ i 
 theorem h3_at (i : Nat) (hi : i < NN) :
     (((distF ()).get! i).toNat = 11 → cert11 (distF ()) (kbadF ()) i = true) ∧
     (((distF ()).get! i).toNat = 12 → words476.contains i = true) := by
-  have h := h3_true; unfold h3F at h
-  have := allBelow_spec _ _ h i hi
-  simp only [Bool.and_eq_true, Bool.or_eq_true, bne_iff_ne, ne_eq] at this
+  have key : ((((distF ()).get! i).toNat != 11 || cert11 (distF ()) (kbadF ()) i) &&
+      (((distF ()).get! i).toNat != 12 || words476.contains i)) = true := by
+    by_cases hh : i < HALF
+    · have h := h3a_true; unfold h3F at h
+      have := allBelow_spec _ _ h i hh
+      simp only [Bool.or_eq_true, decide_eq_true_eq] at this
+      rcases this with h0 | h0
+      · omega
+      · exact h0
+    · have h := h3b_true; unfold h3F at h
+      have := allBelow_spec _ _ h i hi
+      simp only [Bool.or_eq_true, decide_eq_true_eq] at this
+      rcases this with h0 | h0
+      · exact absurd h0 hh
+      · exact h0
+  simp only [Bool.and_eq_true, Bool.or_eq_true, bne_iff_ne, ne_eq] at key
   refine ⟨fun h11 => ?_, fun h12 => ?_⟩
-  · rcases this.1 with h' | h'
+  · rcases key.1 with h' | h'
     · exact absurd h11 h'
     · exact h'
-  · rcases this.2 with h' | h'
+  · rcases key.2 with h' | h'
     · exact absurd h12 h'
     · exact h'
 
