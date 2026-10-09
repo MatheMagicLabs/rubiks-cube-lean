@@ -1,0 +1,38 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["1804171759936177000"],
+  "i": "17097485386593261769",
+  "c": "451180140925705592"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/GodsProof.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/GodsProof.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/GodsProof.ilean -c /root/cubelean/.lake/build/ir/CubeP/GodsProof.c --setup /root/cubelean/.lake/build/ir/CubeP/GodsProof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/GodsProof.lean:7:0: automatically included section variable(s) unused in theorem 'actList_cons':\n  [DecidableEq K]\n  [Hashable K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq K] [Hashable K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+   "level": "warning"},
+  {"message":
+   "CubeP/GodsProof.lean:91:0: 'pocket_cube_htm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"},
+  {"message":
+   "CubeP/GodsProof.lean:92:0: 'pocket_cube_qtm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.GodsProof:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.GodsThm transitive imports (legacy)", "3838982413093622461"],
+        ["CubeP.GodsThm:importAllArts", "13550451048635549897"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so", "8167523747239845755"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/GodsProof.lean", "16679036860493185120"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "3302376521224901525"}

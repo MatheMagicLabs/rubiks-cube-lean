@@ -1,0 +1,15 @@
+{"plugins":
+ ["/root/cubelean/.lake/build/lib/libCube.so",
+  "/root/cubelean/.lake/build/lib/libCubeG.so"],
+ "options": {},
+ "name": "CubeP.GodsProof",
+ "isModule": false,
+ "importArts":
+ {"CubeP.GodsThm": ["/root/cubelean/.lake/build/lib/lean/CubeP/GodsThm.olean"],
+  "CubeG.Gods": ["/root/cubelean/.lake/build/lib/lean/CubeG/Gods.olean"],
+  "Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
+  "Cube.Phase34": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase34.olean"],
+  "Cube.Phase12": ["/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"],
+  "Cube.Parity": ["/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"],
+  "Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
+ "dynlibs": []}

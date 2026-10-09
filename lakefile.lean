@@ -10,3 +10,7 @@ lean_lib Cube where
 re-run the certificate computations at load time. -/
 lean_lib CubeP where
   globs := #[.submodules `CubeP]
+
+/-- generic God's-number tables (2×2×2), precompiled. -/
+lean_lib CubeG where
+  precompileModules := true
