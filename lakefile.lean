@@ -18,3 +18,7 @@ lean_lib CubeG where
 /-- Kociemba phase 2 tables (precompiled). -/
 lean_lib CubeH where
   precompileModules := true
+
+/-- 28-move certificates (precompiled). -/
+lean_lib CubeK where
+  precompileModules := true
