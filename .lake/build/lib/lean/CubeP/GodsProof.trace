@@ -26,7 +26,8 @@
     ["libs",
      [["import dynlibs",
        [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
-        ["/root/cubelean/.lake/build/lib/libCubeG.so", "8167523747239845755"]]],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "14397249893025297598"]]],
       ["package external libraries", "1723"],
       ["module dynlibs", "1723"],
       ["module plugins", "1723"]]]]],
@@ -35,4 +36,4 @@
   ["/root/cubelean/CubeP/GodsProof.lean", "16679036860493185120"],
   ["options", "1723"],
   ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
- "depHash": "3302376521224901525"}
+ "depHash": "16974671328160447486"}

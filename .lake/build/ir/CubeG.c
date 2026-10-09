@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: CubeG
-// Imports: Init CubeG.Gods CubeG.Solver
+// Imports: Init CubeG.Gods CubeG.Solver CubeG.Lower CubeG.Witness CubeG.WitnessT
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -16,6 +16,9 @@ extern "C" {
 lean_object* initialize_Init(uint8_t builtin, lean_object*);
 lean_object* initialize_CubeG_Gods(uint8_t builtin, lean_object*);
 lean_object* initialize_CubeG_Solver(uint8_t builtin, lean_object*);
+lean_object* initialize_CubeG_Lower(uint8_t builtin, lean_object*);
+lean_object* initialize_CubeG_Witness(uint8_t builtin, lean_object*);
+lean_object* initialize_CubeG_WitnessT(uint8_t builtin, lean_object*);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_CubeG(uint8_t builtin, lean_object* w) {
 lean_object * res;
@@ -28,6 +31,15 @@ res = initialize_CubeG_Gods(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 res = initialize_CubeG_Solver(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_CubeG_Lower(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_CubeG_Witness(builtin, lean_io_mk_world());
+if (lean_io_result_is_error(res)) return res;
+lean_dec_ref(res);
+res = initialize_CubeG_WitnessT(builtin, lean_io_mk_world());
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));

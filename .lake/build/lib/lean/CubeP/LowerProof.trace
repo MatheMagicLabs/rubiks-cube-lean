@@ -1,0 +1,35 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["10614769348082411372"],
+  "i": "15778620088480095985",
+  "c": "5702947517591532094"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/LowerProof.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/LowerProof.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/LowerProof.ilean -c /root/cubelean/.lake/build/ir/CubeP/LowerProof.c --setup /root/cubelean/.lake/build/ir/CubeP/LowerProof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/LowerProof.lean:57:0: 'kociemba_phase1_lower' depends on axioms: [propext,\n Classical.choice,\n Lean.ofReduceBool,\n Lean.trustCompiler,\n Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.LowerProof:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeP.LowerThm transitive imports (legacy)", "16391725956884923612"],
+        ["CubeP.LowerThm:importAllArts", "6700442415313069583"],
+        ["CubeP.Kph1Proof transitive imports (legacy)", "4832035772229464916"],
+        ["CubeP.Kph1Proof:importAllArts", "2595984245175691335"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "16274011246180389074"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/LowerProof.lean", "12628134682570863880"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "13296006715259812204"}

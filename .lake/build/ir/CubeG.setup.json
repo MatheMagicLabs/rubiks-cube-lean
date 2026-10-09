@@ -1,12 +1,19 @@
 {"plugins":
  ["/root/cubelean/.lake/build/lib/libCube.so",
   "/root/cubelean/.lake/build/lib/lean/CubeG_Gods.so",
-  "/root/cubelean/.lake/build/lib/lean/CubeG_Solver.so"],
+  "/root/cubelean/.lake/build/lib/lean/CubeG_Solver.so",
+  "/root/cubelean/.lake/build/lib/lean/CubeG_Lower.so",
+  "/root/cubelean/.lake/build/lib/lean/CubeG_Witness.so",
+  "/root/cubelean/.lake/build/lib/lean/CubeG_WitnessT.so"],
  "options": {},
  "name": "CubeG",
  "isModule": false,
  "importArts":
- {"CubeG.Solver": ["/root/cubelean/.lake/build/lib/lean/CubeG/Solver.olean"],
+ {"CubeG.WitnessT":
+  ["/root/cubelean/.lake/build/lib/lean/CubeG/WitnessT.olean"],
+  "CubeG.Witness": ["/root/cubelean/.lake/build/lib/lean/CubeG/Witness.olean"],
+  "CubeG.Solver": ["/root/cubelean/.lake/build/lib/lean/CubeG/Solver.olean"],
+  "CubeG.Lower": ["/root/cubelean/.lake/build/lib/lean/CubeG/Lower.olean"],
   "CubeG.Gods": ["/root/cubelean/.lake/build/lib/lean/CubeG/Gods.olean"],
   "Cube.Square": ["/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"],
   "Cube.Select": ["/root/cubelean/.lake/build/lib/lean/Cube/Select.olean"],

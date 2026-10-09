@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["1635566145026993330"],
+  "i": "13013566908482407988",
+  "c": "8331342427634915166"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/WitnessRun.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/WitnessRun.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/WitnessRun.ilean -c /root/cubelean/.lake/build/ir/CubeP/WitnessRun.c --setup /root/cubelean/.lake/build/ir/CubeP/WitnessRun.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/WitnessRun.lean:2:0: [\"cell 11747723 rankOk true solved true w0ok true len 31 w0: L2 D2 B2 R2 D2 B2 R2 D2 R2 U2 D' B2 U' F2 U' L2 U R2 U2 B' R' F2 U2 F L2 R' D U2 L' R' U'\",\n \"cell 15221729 rankOk true solved true w0ok true len 34 w0: R2 F2 R2 F2 U2 B2 U2 R2 F2 L2 F2 R2 U' R2 U B2 U2 R2 U' R2 U F2 B' F' D' B2 L U2 F R2 D' L' R' U'\",\n \"cell 15820563 rankOk true solved true w0ok true len 29 w0: B2 R2 B2 U2 F2 R2 D2 F2 R2 F2 R2 U2 U' F2 R2 F2 U' R' F' U' B' L' D' U' R' F' U' R' U'\"]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.WitnessRun:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeG.Witness transitive imports (legacy)", "14199654720724942706"],
+        ["CubeG.Witness:importAllArts", "11250139747651035773"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "12037610369970200109"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/WitnessRun.lean", "11699309787461535567"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "8877061325182231671"}

@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "outputs":
+ {"o": ["18069088627798703348"],
+  "i": "58270328244272995",
+  "c": "2834816846535441920"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/WitnessP2.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/WitnessP2.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/WitnessP2.ilean -c /root/cubelean/.lake/build/ir/CubeP/WitnessP2.c --setup /root/cubelean/.lake/build/ir/CubeP/WitnessP2.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "CubeP/WitnessP2.lean:25:0: [\"P2 key-dist 10 solved true w0ok true eo true w0: F2 U2 R2 D2 R2 B2 L2 F2 R2 D2 D' B2 R2 U F2 U2 R2 U' L2 U R' F2 D F2 U' L2 U L' D' U'\"]",
+   "level": "info"}],
+ "inputs":
+ [["CubeP.WitnessP2:deps",
+   [["deps",
+     [["cubelean/CubeP:extraDep", [["@cubelean:extraDep", "1723"]]],
+      ["imports",
+       [["CubeG.WitnessT transitive imports (legacy)", "7399655256603375477"],
+        ["CubeG.WitnessT:importAllArts", "15488747654405716791"]]]]],
+    ["libs",
+     [["import dynlibs",
+       [["/root/cubelean/.lake/build/lib/libCube.so", "12440142611353230588"],
+        ["/root/cubelean/.lake/build/lib/libCubeG.so",
+         "16274011246180389074"]]],
+      ["package external libraries", "1723"],
+      ["module dynlibs", "1723"],
+      ["module plugins", "1723"]]]]],
+  ["Lean 4.23.0, commit 50aaf682e9b74ab92880292a25c68baa1cc81c87",
+   "5786258275165720599"],
+  ["/root/cubelean/CubeP/WitnessP2.lean", "199402959167890404"],
+  ["options", "1723"],
+  ["Module.leanArgs: #[-DmaxRecDepth=100000]", "5442885156201026968"]],
+ "depHash": "14952855099257140814"}
