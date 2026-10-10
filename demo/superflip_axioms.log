@@ -1,0 +1,38 @@
+# Superflip lower bound: build and axiom check (10 Oct 2026)
+
+## lake build CubeP.SfThm (native_decide certificate: phase-1 table, phase-2 table, normal-form search)
+✔ [80/80] Built CubeP.SfThm (6270s)
+Build completed successfully (80 jobs).
+
+## SfAlg, SfNorm, SfProof elaborated with plain lean against the existing oleans
+(lake wanted to re-run unrelated older certificates after the CubeO library root gained CubeO.Sf)
+=== SfAlg 16:57:49
+=== SfAlg exit 0 17:03:57
+=== SfNorm 17:03:57
+=== SfNorm exit 0 17:04:02
+=== SfProof 17:04:02
+'superflip_distance' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+'gods_number_bounds' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+=== SfProof exit 0 17:04:05
+
+## Independent check file (imports CubeP.SfProof)
+import CubeP.SfProof
+#check @superflip_distance
+#check @gods_number_bounds
+#print axioms superflip_distance
+#print axioms gods_number_bounds
+#print axioms upper_bound_28
+#print axioms sf_true
+
+superflip_distance : (∀ (w : List Nat),
+    (∀ (m : Nat), m ∈ w → m < 18) → applyList (eval superflip) w = St.id → 20 ≤ w.length) ∧
+  (∀ (m : Nat), m ∈ superflip → m < 18) ∧ superflip.length = 20 ∧ applyList (eval superflip) superflip = St.id
+gods_number_bounds : (∀ (w : List Nat),
+    (∀ (m : Nat), m ∈ w → m < 18) → ∃ W, W.length ≤ 28 ∧ (∀ (m : Nat), m ∈ W → m < 18) ∧ applyList (eval w) W = St.id) ∧
+  ∃ w,
+    (∀ (m : Nat), m ∈ w → m < 18) ∧
+      ∀ (W : List Nat), (∀ (m : Nat), m ∈ W → m < 18) → applyList (eval w) W = St.id → 20 ≤ W.length
+'superflip_distance' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+'gods_number_bounds' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+'upper_bound_28' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+'sf_true' depends on axioms: [propext, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
