@@ -1,0 +1,14 @@
+=== CubeP.Low2ThmA 05:35:50
+ℹ [26/77] Replayed Cube.ParityLaw
+info: Cube/ParityLaw.lean:103:0: 'parity_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [74/77] Built CubeO (58s)
+✔ [75/77] Built CubeO:c.o (124ms)
+✔ [76/77] Built CubeO:shared (88ms)
+✔ [77/77] Built CubeP.Low2ThmA (573s)
+Build completed successfully (77 jobs).
+=== CubeP.Low2ThmB 05:46:23
+ℹ [26/77] Replayed Cube.ParityLaw
+info: Cube/ParityLaw.lean:103:0: 'parity_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [77/77] Built CubeP.Low2ThmB (7925s)
+Build completed successfully (77 jobs).
+=== done 07:58:30
