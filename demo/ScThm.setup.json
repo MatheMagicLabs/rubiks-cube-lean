@@ -1,0 +1,48 @@
+{
+ "plugins": [
+  "/root/cubelean/.lake/build/lib/libCube.so",
+  "/root/cubelean/.lake/build/lib/libCubeH.so",
+  "/root/cubelean/.lake/build/lib/libCubeG.so",
+  "/root/cubelean/.lake/build/lib/libCubeO.so",
+  "/root/cubelean/.lake/build/lib/lean/CubeS_Sc.so"
+ ],
+ "options": {},
+ "name": "CubeS.ScThm",
+ "isModule": false,
+ "importArts": {
+  "CubeS.Sc": [
+   "/root/cubelean/.lake/build/lib/lean/CubeS/Sc.olean"
+  ],
+  "CubeO.Sf": [
+   "/root/cubelean/.lake/build/lib/lean/CubeO/Sf.olean"
+  ],
+  "CubeH.Kph2": [
+   "/root/cubelean/.lake/build/lib/lean/CubeH/Kph2.olean"
+  ],
+  "Cube.Square": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Square.olean"
+  ],
+  "Cube.Select": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Select.olean"
+  ],
+  "Cube.Phase4": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Phase4.olean"
+  ],
+  "Cube.Phase34": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Phase34.olean"
+  ],
+  "Cube.Phase12": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Phase12.olean"
+  ],
+  "Cube.Parity": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Parity.olean"
+  ],
+  "Cube.Model": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"
+  ],
+  "Cube.Kph1": [
+   "/root/cubelean/.lake/build/lib/lean/Cube/Kph1.olean"
+  ]
+ },
+ "dynlibs": []
+}

@@ -26,3 +26,7 @@ lean_lib CubeK where
 /-- slice groups and order-11 search (precompiled). -/
 lean_lib CubeO where
   precompileModules := true
+
+/-- supercube certificate search (precompiled). -/
+lean_lib CubeS where
+  precompileModules := true
