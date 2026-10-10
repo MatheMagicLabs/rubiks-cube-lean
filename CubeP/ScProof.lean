@@ -1,4 +1,4 @@
-import CubeP.ScNorm
+import CubeP.ScSym
 import CubeP.SfProof
 import CubeS.ScThm
 open Std
@@ -28,7 +28,7 @@ theorem scSearch_succ (d1 d2 : ByteArray) (B : Nat) (tgt : Sig) (f r0 r1 r2 : Na
     scSearch d1 d2 B tgt (f + 1) r0 r1 r2 p g lastf rs lnh s =
       ((!(lnh && (d1.get! r0).toNat == 0) || leafS d2 tgt (B - g) rs.mx p lastf true s) &&
        allLt (fun m =>
-         !(okNext lastf m) || (g == 0 && !(m == 3 || m == 5)) ||
+         !(okNext lastf m) || !(symOK g lastf m) ||
          (decide (B < g + 1 + (d1.get! (next r0 m)).toNat + (runStep rs m).mx) ||
           decide (B < g + 1 + (d1.get! (next r1 (muS m))).toNat) ||
           decide (B < g + 1 + (d1.get! (next r2 (muS (muS m)))).toNat) ||
@@ -153,6 +153,16 @@ theorem okNext_false {lf m : Nat} (h : okNext lf m = false) :
       simp only [Bool.and_eq_true, decide_eq_true_eq, beq_iff_eq] at hb
       exact ⟨hb.1.1, hb.1.2, hb.2⟩
 
+theorem lastf_eq {p : List Nat} {lastf : Nat} (hl0 : p = [] → lastf = 6) (hl1 : ∀ i l, p = i ++ [l] → lastf = l / 3) :
+    lastf = lastF p := by
+  cases hrev : p.reverse with
+  | nil =>
+    have hp0 : p = [] := List.reverse_eq_nil_iff.1 hrev
+    rw [hl0 hp0, hp0]; rfl
+  | cons l t =>
+    have hil : p = t.reverse ++ [l] := by rw [← List.reverse_reverse p, hrev]; simp
+    rw [hl1 _ _ hil, hil]; simp [lastF]
+
 /-- **Specification of the search.** -/
 theorem sc_spec : ∀ (f : Nat) (p : List Nat) (r0 r1 r2 : Nat) (pp : P) (lastf : Nat) (rs : RunSt) (lnh : Bool)
     (s : Sig),
@@ -163,7 +173,7 @@ theorem sc_spec : ∀ (f : Nat) (p : List Nat) (r0 r1 r2 : Nat) (pp : P) (lastf 
     (lnh = true ↔ ∃ i l, p = i ++ [l] ∧ isHUD l = false) → s = sigOf p →
     scSearch (distF ()) (dist2F ()) 21 sig0 f r0 r1 r2 pp p.length lastf rs lnh s = true →
     ∀ q : List Nat, (∀ m ∈ q, m < 18) → NoAdj (p ++ q) → Canon (p ++ q) →
-      (p = [] → ∃ x t, q = x :: t ∧ (x = 3 ∨ x = 5)) →
+      (∀ i m r, p ++ q = i ++ m :: r → symOK i.length (lastF i) m = true) →
       (∃ i l, p ++ q = i ++ [l] ∧ isHUD l = false) →
       ∀ s2 : List Nat, (∀ m ∈ s2, m ∈ g2Moves) → applyList sfSt ((p ++ q) ++ s2) = St.id →
         (runOf (p ++ q)).mx ≤ s2.length → (∀ i l, p ++ q = i ++ [l] → OrdH (l / 3) true s2) →
@@ -257,15 +267,13 @@ theorem sc_spec : ∀ (f : Nat) (p : List Nat) (r0 r1 r2 : Nat) (pp : P) (lastf 
           rcases horder' with h | ⟨-, hax, hlt⟩
           · exact hadj t.reverse q' l m (by rw [hil]; simp) (by omega)
           · exact hcan t.reverse q' l m (by rw [hil]; simp) ⟨by omega, by omega⟩
-      · -- the first move must be R or R'
+      · -- the symmetry restriction excludes this move
         exfalso
-        simp only [Bool.and_eq_true, beq_iff_eq, Bool.not_eq_true', Bool.or_eq_false_iff, beq_eq_false_iff_ne,
-          ne_eq] at hfirst
-        have hp0 : p = [] := List.eq_nil_of_length_eq_zero hfirst.1
-        obtain ⟨x, t, hxt, hx⟩ := hhead hp0
-        simp only [List.cons.injEq] at hxt
-        rw [← hxt.1] at hx
-        omega
+        have hf' : symOK p.length lastf m = false := by simpa using hfirst
+        have hok := hhead p m q' rfl
+        rw [← lastf_eq hl0 hl1] at hok
+        rw [hok] at hf'
+        exact Bool.noConfusion hf'
       · rw [Bool.or_eq_true, Bool.or_eq_true, Bool.or_eq_true] at hrest
         have hsolL : applyList sfSt (p ++ m :: q' ++ s2) = St.id := hsol
         have hleaf := (leaf_bound hall hs2 hsolL).1
@@ -327,7 +335,7 @@ theorem sc_spec : ∀ (f : Nat) (p : List Nat) (r0 r1 r2 : Nat) (pp : P) (lastf 
                 simp only [List.cons.injEq, and_true] at this
                 rw [this.2]; simpa using hl)
             (by rw [hsg, sigOf_snoc])
-            (by rw [hlen]; exact hrec) q' hq' (by simpa using hadj) (by simpa using hcan) (by simp)
+            (by rw [hlen]; exact hrec) q' hq' (by simpa using hadj) (by simpa using hcan) (by simpa using hhead)
             (by simpa using hlast) s2 hs2 (by simpa using hsol) (by simpa using hmx)
             (by intro i l e; exact hord i l (by simpa using e)) (by simpa using hsig)
           simp only [List.length_append, List.length_cons, List.length_nil] at this ⊢
@@ -338,8 +346,8 @@ theorem supercube_superflip (w : List Nat) (hw : ∀ m ∈ w, m < 18) (h : eval 
     22 ≤ w.length := by
   rcases Nat.lt_or_ge w.length 22 with hlt | hge
   · exfalso
-    obtain ⟨s1, s2, hsol, hlen, hs2, hhead, hlast, hadj, hadjAll, hcan1, hcan2, hrun⟩ :=
-      normal_formZ w ⟨⟨hw, h⟩, Z_of_sig hw hz⟩ (by omega)
+    obtain ⟨s1, s2, hsol, hlen, hs2, -, hlast, hadj, hadjAll, hcan1, hcan2, hrun, hsym⟩ :=
+      normal_formZ2 w ⟨⟨hw, h⟩, Z_of_sig hw hz⟩ (by omega)
     have hall : ∀ m ∈ s1 ++ s2, m < 18 := hsol.1.1
     have hs1 : ∀ m ∈ s1, m < 18 := fun m hm => hall m (by simp [hm])
     have hs2g : ∀ m ∈ s2, m ∈ g2Moves := fun m hm => List.contains_iff_mem.1 (hs2 m hm)
@@ -349,7 +357,7 @@ theorem supercube_superflip (w : List Nat) (hw : ∀ m ∈ w, m < 18) (h : eval 
     unfold scF at root
     have := sc_spec 21 [] (rank sfSt) (rank sfSt) (rank sfSt) idP 6 run0 false sig0 (by simp) (by simp) rfl rfl rfl rfl
       (fun _ => rfl) (fun i l e => by simp at e) rfl (by simp) rfl root s1 hs1 (by simpa using hadj)
-      (by simpa using hcan1) (fun _ => hhead) (by simpa using hlast) s2 hs2g hsolA (by simpa using hrun)
+      (by simpa using hcan1) (fun i m r e => hsym i m (r ++ s2) (by simp at e; rw [e]; simp)) (by simpa using hlast) s2 hs2g hsolA (by simpa using hrun)
       (by
         intro i l e
         simp only [List.nil_append] at e

@@ -48,6 +48,14 @@ def leafS (d2 : ByteArray) (tgt : Sig) : Nat → Nat → P → Nat → Bool → 
          (let q := pAct p m
           decide (r < (d2.get! (cellOf q)).toNat) || leafS d2 tgt r (need - 1) q (m / 3) false (sigStep s m))) 10)
 
+/-- symmetry restriction on the first three moves of the normal form: first move R (mirror), second face U, F or L
+(half turn x2 about the R–L axis), after R L the third face U or F (x2 again) -/
+def symOK (g lastf m : Nat) : Bool :=
+  if g == 0 then m == 3
+  else if g == 1 then (m / 3 == 0 || m / 3 == 2 || m / 3 == 4)
+  else if g == 2 && lastf == 4 then (m / 3 == 0 || m / 3 == 2)
+  else true
+
 /-- progress output on stderr for long certificate runs; logically just `x ()` -/
 def traceIf (b : Bool) (msg : Unit → String) (x : Unit → Bool) : Bool :=
   if b then dbgTrace (msg ()) x else x ()
@@ -62,7 +70,7 @@ def scSearch (d1 d2 : ByteArray) (B : Nat) (tgt : Sig) :
     (match fuel with
      | 0 => true
      | f + 1 => allLt (fun m =>
-         !(okNext lastf m) || (g == 0 && !(m == 3 || m == 5)) ||
+         !(okNext lastf m) || !(symOK g lastf m) ||
          (let s0 := next r0 m
           let s1 := next r1 (muS m)
           let s2 := next r2 (muS (muS m))
