@@ -56,12 +56,27 @@ def symOK (g lastf m : Nat) : Bool :=
   else if g == 2 && lastf == 4 then (m / 3 == 0 || m / 3 == 2)
   else true
 
-/-- progress output on stderr for long certificate runs; logically just `x ()` -/
-def traceIf (b : Bool) (msg : Unit → String) (x : Unit → Bool) : Bool :=
-  if b then dbgTrace (msg ()) x else x ()
+/-- appends a progress line (monotonic ms, message) to `demo/sc_progress.log`; returns 0 -/
+def progressLine (msg : String) : IO Nat := do
+  let h ← IO.FS.Handle.mk "/root/cubelean/demo/sc_progress.log" .append
+  let t ← IO.monoMsNow
+  h.putStrLn s!"{t} {msg}"
+  h.flush
+  return 0
 
-theorem traceIf_eq (b : Bool) (msg : Unit → String) (x : Unit → Bool) : traceIf b msg x = x () := by
-  unfold traceIf dbgTrace; split <;> rfl
+unsafe def traceIfImpl (b : Bool) (msg : Unit → String) (x : Unit → Bool) : Bool :=
+  if b then
+    match unsafeIO (progressLine (msg ())) with
+    | .ok r => if r == 7 then false else x ()
+    | .error _ => x ()
+  else x ()
+
+/-- progress output for long certificate runs. Logically just `x ()`. The compiled code (`traceIfImpl`) also appends
+`msg` to a log file; its value is still `x ()`, since `progressLine` returns 0 and the guard `r == 7` never fires. -/
+@[implemented_by traceIfImpl]
+def traceIf (_b : Bool) (_msg : Unit → String) (x : Unit → Bool) : Bool := x ()
+
+theorem traceIf_eq (b : Bool) (msg : Unit → String) (x : Unit → Bool) : traceIf b msg x = x () := rfl
 
 def scSearch (d1 d2 : ByteArray) (B : Nat) (tgt : Sig) :
     Nat → Nat → Nat → Nat → P → Nat → Nat → RunSt → Bool → Sig → Bool
