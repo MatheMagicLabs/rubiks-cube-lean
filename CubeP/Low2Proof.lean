@@ -181,3 +181,18 @@ theorem kociemba_phase2_lower (W : List Nat) (hw : ∀ m ∈ W, m ∈ g2Moves) (
   exact this.symm
 
 #print axioms kociemba_phase2_lower
+
+/-- an 18-move word of ⟨U,D,R2,L2,F2,B2⟩ producing the mirror position (found by descent in the certified table) -/
+def mirrorWord : List Nat := [7, 13, 0, 16, 7, 4, 16, 7, 4, 0, 7, 4, 9, 0, 7, 4, 11, 2]
+theorem mirrorWord_ok : (mirrorWord.length == 18 && mirrorWord.all (fun m => g2Moves.contains m) &&
+    eval mirrorWord == mirrorSt) = true := by native_decide
+
+/-- **The phase-2 bound 18 is attained:** the mirror position is reached by 18 moves of ⟨U,D,R2,L2,F2,B2⟩ and
+cannot be solved by fewer. -/
+theorem kociemba_phase2_attained : (∃ w : List Nat, (∀ m ∈ w, m ∈ g2Moves) ∧ eval w = mirrorSt) ∧
+    ∀ W, (∀ m ∈ W, m ∈ g2Moves) → applyList mirrorSt W = St.id → 18 ≤ W.length := by
+  have h := mirrorWord_ok
+  simp only [Bool.and_eq_true, beq_iff_eq, List.all_eq_true, List.contains_iff_mem] at h
+  exact ⟨⟨mirrorWord, h.1.2, h.2⟩, kociemba_phase2_lower⟩
+
+#print axioms kociemba_phase2_attained

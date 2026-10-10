@@ -1,0 +1,74 @@
+ℹ [24/81] Replayed Cube.ParityLaw
+info: Cube/ParityLaw.lean:103:0: 'parity_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [76/81] Replayed CubeP.GodsThm
+info: CubeP/GodsThm.lean:2:0: [[3674160, 3674160],
+ [1, 9, 54, 321, 1847, 9992, 50136, 227536, 870072, 1887748, 623800, 2644],
+ [1, 6, 27, 120, 534, 2256, 8969, 33058, 114149, 360508, 930588, 1350852, 782536, 90280, 276]]
+ℹ [77/82] Built CubeP.SliceThm (41s)
+info: CubeP/SliceThm.lean:2:0: [[768, 768, 6144, 6144],
+ [1, 6, 27, 120, 287, 258, 69],
+ [1, 9, 51, 247, 428, 32],
+ [1, 6, 27, 120, 423, 1098, 1770, 1650, 851, 198],
+ [1, 9, 51, 265, 864, 1785, 2017, 1008, 144]]
+⚠ [78/82] Replayed CubeP.GodsProof
+warning: CubeP/GodsProof.lean:7:0: automatically included section variable(s) unused in theorem 'actList_cons':
+  [DecidableEq K]
+  [Hashable K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] [Hashable K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: CubeP/GodsProof.lean:91:0: 'pocket_cube_htm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/GodsProof.lean:92:0: 'pocket_cube_qtm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [80/107] Built CubeP.SliceProof (40s)
+info: CubeP/SliceProof.lean:45:0: 'slice_group_quarter' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/SliceProof.lean:46:0: 'antislice_group_half' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/SliceProof.lean:47:0: 'slice_group_half' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/SliceProof.lean:48:0: 'antislice_group_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+ℹ [82/107] Replayed CubeP.Phase34Thm
+info: CubeP/Phase34Thm.lean:2:0: [40320, 34650, 70, 96, 2822400, 13]
+ℹ [83/107] Replayed CubeP.Phase12Thm
+info: CubeP/Phase12Thm.lean:2:0: [2048, 1082565, 7, 10]
+ℹ [84/107] Replayed CubeP.Phase12Proof
+info: CubeP/Phase12Proof.lean:82:0: 'phase1_eo' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/Phase12Proof.lean:140:0: 'phase2_dr' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [86/107] Replayed CubeP.Kph1Proof
+info: CubeP/Kph1Proof.lean:167:0: 'kociemba_phase1' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [90/107] Replayed CubeP.Final
+info: CubeP/Final.lean:136:0: 'thistlethwaite_45' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [91/107] Replayed CubeP.Final40
+info: CubeP/Final40.lean:26:0: 'upper_bound_40' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [93/107] Replayed CubeP.Kph2Proof
+info: CubeP/Kph2Proof.lean:424:0: 'kociemba_phase2' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/Kph2Proof.lean:439:0: 'upper_bound_30' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [94/107] Replayed CubeP.Low2Proof
+info: CubeP/Low2Proof.lean:183:0: 'kociemba_phase2_lower' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+info: CubeP/Low2Proof.lean:198:0: 'kociemba_phase2_attained' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+⚠ [105/107] Replayed CubeP.K28Proof
+warning: CubeP/K28Proof.lean:260:67: This simp argument is unused:
+  beq_iff_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [Bool.and_eq_true, Bool.or_eq_true, Bool.not_eq_true', be̵q̵_̵i̵f̵f̵_̵e̵q̵,̵ ̵b̵ne_iff_ne, ne_eq,
+      List.all_eq_true, List.mem_range] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: CubeP/K28Proof.lean:364:0: 'upper_bound_28' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [106/107] Built CubeP.Ord11Thm (273s)
+info: CubeP/Ord11Thm.lean:2:0: [1, 18, 243, 2874, 28000, 205416, 1168516, 5402628, 20776176, 45391616, 15139616, 64736, 0]
+ℹ [107/107] Built CubeP.Ord11Proof (41s)
+info: CubeP/Ord11Proof.lean:184:0: 'order11_lower' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/Ord11Proof.lean:185:0: 'order11_witness' depends on axioms: [propext, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+Build completed successfully (107 jobs).

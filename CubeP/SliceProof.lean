@@ -44,3 +44,5 @@ theorem antislice_group_half :
 
 #print axioms slice_group_quarter
 #print axioms antislice_group_half
+#print axioms slice_group_half
+#print axioms antislice_group_quarter
