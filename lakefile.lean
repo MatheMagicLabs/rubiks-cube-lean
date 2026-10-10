@@ -22,3 +22,7 @@ lean_lib CubeH where
 /-- 28-move certificates (precompiled). -/
 lean_lib CubeK where
   precompileModules := true
+
+/-- slice groups and order-11 search (precompiled). -/
+lean_lib CubeO where
+  precompileModules := true

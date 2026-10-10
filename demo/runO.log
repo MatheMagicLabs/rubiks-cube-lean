@@ -1,0 +1,65 @@
+=== CubeP.Ord11Proof 05:20:42
+ℹ [26/72] Replayed Cube.ParityLaw
+info: Cube/ParityLaw.lean:103:0: 'parity_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [60/72] Replayed CubeP.Phase34Thm
+info: CubeP/Phase34Thm.lean:2:0: [40320, 34650, 70, 96, 2822400, 13]
+ℹ [61/72] Replayed CubeP.Phase12Thm
+info: CubeP/Phase12Thm.lean:2:0: [2048, 1082565, 7, 10]
+ℹ [62/72] Replayed CubeP.Phase12Proof
+info: CubeP/Phase12Proof.lean:82:0: 'phase1_eo' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/Phase12Proof.lean:140:0: 'phase2_dr' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [64/72] Replayed CubeP.Kph1Proof
+info: CubeP/Kph1Proof.lean:167:0: 'kociemba_phase1' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+✔ [65/72] Built CubeO.Ord11 (2.8s)
+✔ [66/72] Built CubeO.Ord11:c.o (371ms)
+✔ [67/72] Built CubeO.Ord11:dynlib (33ms)
+✔ [68/72] Built CubeO (2.7s)
+✔ [70/72] Built CubeO:shared (38ms)
+ℹ [71/72] Built CubeP.Ord11Thm (229s)
+info: CubeP/Ord11Thm.lean:2:0: [1, 18, 243, 2874, 28000, 205416, 1168516, 5402628, 20776176, 45391616, 15139616, 64736, 0]
+ℹ [72/72] Built CubeP.Ord11Proof (4.5s)
+info: CubeP/Ord11Proof.lean:184:0: 'order11_lower' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/Ord11Proof.lean:185:0: 'order11_witness' depends on axioms: [propext, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+Build completed successfully (72 jobs).
+=== CubeP.SliceProof 05:24:42
+ℹ [25/68] Replayed Cube.ParityLaw
+info: Cube/ParityLaw.lean:103:0: 'parity_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [65/68] Replayed CubeP.GodsThm
+info: CubeP/GodsThm.lean:2:0: [[3674160, 3674160],
+ [1, 9, 54, 321, 1847, 9992, 50136, 227536, 870072, 1887748, 623800, 2644],
+ [1, 6, 27, 120, 534, 2256, 8969, 33058, 114149, 360508, 930588, 1350852, 782536, 90280, 276]]
+⚠ [66/68] Replayed CubeP.GodsProof
+warning: CubeP/GodsProof.lean:7:0: automatically included section variable(s) unused in theorem 'actList_cons':
+  [DecidableEq K]
+  [Hashable K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq K] [Hashable K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: CubeP/GodsProof.lean:91:0: 'pocket_cube_htm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/GodsProof.lean:92:0: 'pocket_cube_qtm' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+ℹ [67/68] Built CubeP.SliceThm (4.3s)
+info: CubeP/SliceThm.lean:2:0: [[768, 768, 6144, 6144],
+ [1, 6, 27, 120, 287, 258, 69],
+ [1, 9, 51, 247, 428, 32],
+ [1, 6, 27, 120, 423, 1098, 1770, 1650, 851, 198],
+ [1, 9, 51, 265, 864, 1785, 2017, 1008, 144]]
+✖ [68/68] Building CubeP.SliceProof (13s)
+trace: .> LEAN_PATH=/root/cubelean/.lake/build/lib/lean /root/lean/lean-4.23.0-linux/bin/lean -DmaxRecDepth=100000 /root/cubelean/CubeP/SliceProof.lean -o /root/cubelean/.lake/build/lib/lean/CubeP/SliceProof.olean -i /root/cubelean/.lake/build/lib/lean/CubeP/SliceProof.ilean -c /root/cubelean/.lake/build/ir/CubeP/SliceProof.c --setup /root/cubelean/.lake/build/ir/CubeP/SliceProof.setup.json --json
+error: CubeP/SliceProof.lean:8:11: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: CubeP/SliceProof.lean:4:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: CubeP/SliceProof.lean:45:0: 'slice_group_quarter' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+info: CubeP/SliceProof.lean:46:0: 'antislice_group_half' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+error: Lean exited with code 1
+Some required targets logged failures:
+- CubeP.SliceProof
+error: build failed
+=== done 05:24:59
