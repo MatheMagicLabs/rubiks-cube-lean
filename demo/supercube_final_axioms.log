@@ -1,0 +1,5 @@
+'supercube_gods_number_ge_22' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
