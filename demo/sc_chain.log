@@ -1,0 +1,9 @@
+start Sat Oct 10 21:59:33 UTC 2026
+v2 start Sat Oct 10 22:04:12 UTC 2026
+v3 start Sat Oct 10 22:16:43 UTC 2026
+C jobs stopped Sat Oct 10 22:16:43 UTC 2026
+--- relaunch after OOM (my test process) Sat Oct 10 23:41:01 UTC 2026
+v3 start Sat Oct 10 23:41:01 UTC 2026
+C jobs stopped Sat Oct 10 23:41:01 UTC 2026
+ScThm rc=0 elapsed 32101 s Sun Oct 11 08:36:02 UTC 2026
+ScProof rc=0 Sun Oct 11 08:36:04 UTC 2026
