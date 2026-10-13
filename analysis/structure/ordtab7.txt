@@ -1,0 +1,71 @@
+2 1 : U2
+3 4 : U2 R2 U2 R2
+4 1 : U
+5 4 : U R U R'
+6 2 : U2 R2
+7 4 : U R U' F
+8 3 : U R2 D
+9 3 : U R F2
+10 4 : U R U' F2
+12 3 : U R2 B2
+14 6 : U R U D' F' D'
+15 4 : U R2 U R2
+16 5 : U R U' F D
+18 5 : U R U R B2
+20 4 : U R U' L2
+21 4 : U R2 F R2
+22 5 : U R F2 B D'
+24 3 : U R2 D2
+28 4 : U R U' L
+30 2 : U R2
+33 4 : U R F' D'
+35 4 : U R2 D' R2
+36 3 : U R B2
+40 4 : U R U2 L
+42 4 : U R2 U2 R'
+44 4 : U R L' B'
+45 4 : U R U L
+48 4 : U R U2 B
+55 6 : U R F2 B' L D2
+56 4 : U R D2 B'
+60 3 : U R B'
+63 2 : U R'
+66 5 : U R U F2 L'
+70 5 : U R B2 D B2
+72 4 : U R U F'
+77 4 : U R D B'
+80 3 : U R B
+84 3 : U R F
+90 3 : U R D
+99 4 : U R2 F L2
+105 2 : U R
+110 7 : U R D2 B R D L'
+112 6 : U R F2 D' R2 B
+120 4 : U R U L2
+126 4 : U R U F2
+132 4 : U R F' L
+140 4 : U R' U F'
+144 4 : U R F2 B'
+154 6 : U R U F L D'
+165 5 : U R U2 L' F
+168 3 : U R D2
+180 3 : U R D'
+198 4 : U R F2 B2
+210 4 : U R2 U F'
+231 4 : U R F2 D2
+240 4 : U R2 B L'
+252 4 : U R F L
+280 5 : U R U L F'
+315 4 : U R D L
+330 5 : U R F' D2 B
+336 5 : U R U F D2
+360 3 : U R F'
+420 4 : U R U2 F
+462 5 : U R F' B L2
+495 5 : U R F' R2 B'
+504 4 : U R2 F L'
+630 5 : U R U L2 F
+720 5 : U R U D2 F
+840 4 : U R F' B2
+990 6 : U R U D' L' F
+1260 5 : U R2 L' F L'

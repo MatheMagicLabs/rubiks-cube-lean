@@ -1,0 +1,3 @@
+ORDER=1 SECOND=16 L3MASK=1
+sf rank 1568218569 d1 10
+bound 21 first 3: nodes 512456096 leaves 9255066; words: len20=8 len21=64

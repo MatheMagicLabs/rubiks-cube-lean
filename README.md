@@ -64,6 +64,7 @@ Build heavy modules one at a time on machines with < 8 GB RAM (`demo/rebuild.sh`
 - `CubeG/`, `CubeH/`, `CubeK/`, `CubeO/`, `CubeS/` — precompiled search and table code used by the certificates
 - `CubeP/` — proofs; `*Thm.lean` files hold the `native_decide` certificates, `*Proof.lean` the theorems
 - `demo/` — build logs, axiom logs, witness searches and the external validation script (not part of the proof)
+- `analysis/` — unverified C and Python code behind the paper's non-formal statements (see `analysis/README.md`)
 
 ## License
 

@@ -1,0 +1,167 @@
+This is ./nxopt21 metric HALF
+ ./nxopt21 -t 1 -
+Load nxopth21b.dat ....10....20....30....40....50....60....70....80....90....100 read in 0.243537
+Finished searching depth 8 pos 1 in 72 probes 26 evals.
+Finished searching depth 9 pos 1 in 885 probes 351 evals.
+Finished searching depth 10 pos 1 in 15763 probes 5637 evals.
+Finished searching depth 11 pos 1 in 111006 probes 39160 evals.
+Finished searching depth 12 pos 1 in 1031360 probes 358490 evals.
+Finished searching depth 13 pos 1 in 13238185 probes 3970049 evals.
+Finished searching depth 14 pos 1 in 90738832 probes 26809606 evals.
+Finished searching depth 15 pos 1 in 618852129 probes 181706348 evals.
+Finished searching depth 16 pos 1 in 4157325875 probes 1216038134 evals.
+Finished searching depth 17 pos 1 in 4157450951 probes 1216077304 evals.
+Solved 1 in 17 probes 4157450951 evals 1216077304 time 228.201
+ R2 L2 F2 B2 U1 F1 B1 D2 R2 U2 L2 F3 B3 L2 U2 L2 D1
+Finished searching depth 8 pos 2 in 72 probes 26 evals.
+Finished searching depth 9 pos 2 in 2192 probes 851 evals.
+Finished searching depth 10 pos 2 in 14531 probes 5343 evals.
+Finished searching depth 11 pos 2 in 112828 probes 40393 evals.
+Finished searching depth 12 pos 2 in 931456 probes 325884 evals.
+Finished searching depth 13 pos 2 in 12076019 probes 3619998 evals.
+Finished searching depth 14 pos 2 in 84782877 probes 25039768 evals.
+Finished searching depth 15 pos 2 in 582281419 probes 170977936 evals.
+Finished searching depth 16 pos 2 in 3980097881 probes 1164513238 evals.
+Finished searching depth 17 pos 2 in 3980112581 probes 1164517613 evals.
+Solved 2 in 17 probes 3980112581 evals 1164517613 time 3960.62
+ R2 L2 F2 B2 U1 F1 B1 U2 R2 U2 L2 F3 B3 R2 U2 L2 D1
+Finished searching depth 8 pos 3 in 72 probes 26 evals.
+Finished searching depth 9 pos 3 in 766 probes 302 evals.
+Finished searching depth 10 pos 3 in 16467 probes 5831 evals.
+Finished searching depth 11 pos 3 in 117965 probes 41010 evals.
+Finished searching depth 12 pos 3 in 1048236 probes 362775 evals.
+Finished searching depth 13 pos 3 in 13419699 probes 4023989 evals.
+Finished searching depth 14 pos 3 in 91024101 probes 26898586 evals.
+Finished searching depth 15 pos 3 in 619215501 probes 181861236 evals.
+Finished searching depth 16 pos 3 in 4151848198 probes 1214511745 evals.
+Finished searching depth 17 pos 3 in 4151913390 probes 1214532373 evals.
+Solved 3 in 17 probes 4151913390 evals 1214532373 time 188.851
+ R2 L2 F2 B2 U1 F1 B1 D2 R2 D2 L2 F3 B3 R2 U2 R2 D1
+Finished searching depth 8 pos 4 in 72 probes 26 evals.
+Finished searching depth 9 pos 4 in 2134 probes 837 evals.
+Finished searching depth 10 pos 4 in 13619 probes 5022 evals.
+Finished searching depth 11 pos 4 in 102421 probes 36779 evals.
+Finished searching depth 12 pos 4 in 991083 probes 345065 evals.
+Finished searching depth 13 pos 4 in 12753422 probes 3822329 evals.
+Finished searching depth 14 pos 4 in 88308532 probes 26088519 evals.
+Finished searching depth 15 pos 4 in 605492844 probes 177802296 evals.
+Finished searching depth 16 pos 4 in 4077660706 probes 1192567415 evals.
+Finished searching depth 17 pos 4 in 4077703359 probes 1192580467 evals.
+Solved 4 in 17 probes 4077703359 evals 1192580467 time 180.027
+ R2 L2 F2 B2 U1 F1 B1 U2 R2 D2 L2 F3 B3 L2 U2 R2 D1
+Finished searching depth 8 pos 5 in 72 probes 26 evals.
+Finished searching depth 9 pos 5 in 765 probes 300 evals.
+Finished searching depth 10 pos 5 in 15650 probes 5576 evals.
+Finished searching depth 11 pos 5 in 111187 probes 39289 evals.
+Finished searching depth 12 pos 5 in 1029344 probes 357969 evals.
+Finished searching depth 13 pos 5 in 13253920 probes 3975873 evals.
+Finished searching depth 14 pos 5 in 90768936 probes 26816104 evals.
+Finished searching depth 15 pos 5 in 618285765 probes 181549728 evals.
+Finished searching depth 16 pos 5 in 4154622286 probes 1215276110 evals.
+Finished searching depth 17 pos 5 in 4154660589 probes 1215287668 evals.
+Solved 5 in 17 probes 4154660589 evals 1215287668 time 176.253
+ R2 L2 F2 B2 U1 F1 B1 U2 R2 D2 L2 F3 B3 L2 D2 L2 D1
+Finished searching depth 8 pos 6 in 72 probes 26 evals.
+Finished searching depth 9 pos 6 in 2143 probes 837 evals.
+Finished searching depth 10 pos 6 in 13480 probes 4949 evals.
+Finished searching depth 11 pos 6 in 101400 probes 36473 evals.
+Finished searching depth 12 pos 6 in 991255 probes 345211 evals.
+Finished searching depth 13 pos 6 in 12766913 probes 3827410 evals.
+Finished searching depth 14 pos 6 in 88380086 probes 26109719 evals.
+Finished searching depth 15 pos 6 in 605472327 probes 177801891 evals.
+Finished searching depth 16 pos 6 in 4078505687 probes 1192831585 evals.
+Finished searching depth 17 pos 6 in 4078567590 probes 1192850894 evals.
+Solved 6 in 17 probes 4078567590 evals 1192850894 time 200.481
+ F2 B2 R2 L2 U1 F1 B1 R2 U1 D1 F2 D1 U1 R2 B1 F1 D1
+Finished searching depth 8 pos 7 in 72 probes 26 evals.
+Finished searching depth 9 pos 7 in 852 probes 336 evals.
+Finished searching depth 10 pos 7 in 16600 probes 5846 evals.
+Finished searching depth 11 pos 7 in 116582 probes 40567 evals.
+Finished searching depth 12 pos 7 in 1047998 probes 362450 evals.
+Finished searching depth 13 pos 7 in 13413256 probes 4020702 evals.
+Finished searching depth 14 pos 7 in 91062979 probes 26908853 evals.
+Finished searching depth 15 pos 7 in 619596523 probes 181962243 evals.
+Finished searching depth 16 pos 7 in 4154447854 probes 1215238113 evals.
+Finished searching depth 17 pos 7 in 4154499459 probes 1215254036 evals.
+Solved 7 in 17 probes 4154499459 evals 1215254036 time 193.617
+ R2 L2 F2 B2 U1 F1 B1 U2 R2 U2 L2 F3 B3 R2 D2 R2 D1
+Finished searching depth 8 pos 8 in 72 probes 26 evals.
+Finished searching depth 9 pos 8 in 2166 probes 841 evals.
+Finished searching depth 10 pos 8 in 14678 probes 5366 evals.
+Finished searching depth 11 pos 8 in 112049 probes 40139 evals.
+Finished searching depth 12 pos 8 in 929928 probes 325184 evals.
+Finished searching depth 13 pos 8 in 12099662 probes 3627833 evals.
+Finished searching depth 14 pos 8 in 84740615 probes 25030002 evals.
+Finished searching depth 15 pos 8 in 582034318 probes 170913593 evals.
+Finished searching depth 16 pos 8 in 3979265438 probes 1164295456 evals.
+Finished searching depth 17 pos 8 in 3979352408 probes 1164322134 evals.
+Solved 8 in 17 probes 3979352408 evals 1164322134 time 196.103
+ R2 L2 F2 B2 U1 F1 B1 D2 R2 U2 L2 F3 B3 L2 D2 R2 D1
+Finished searching depth 9 pos 9 in 26 probes 6 evals.
+Finished searching depth 10 pos 9 in 351 probes 107 evals.
+Finished searching depth 11 pos 9 in 5876 probes 1743 evals.
+Finished searching depth 12 pos 9 in 47099 probes 13990 evals.
+Finished searching depth 13 pos 9 in 491107 probes 142522 evals.
+Finished searching depth 14 pos 9 in 4121245 probes 1183137 evals.
+Finished searching depth 15 pos 9 in 37818250 probes 10923960 evals.
+Finished searching depth 16 pos 9 in 43256194 probes 12479910 evals.
+Solved 9 in 16 probes 43256194 evals 12479910 time 4.78004
+ L2 D1 L3 B2 L2 U2 R3 B2 R2 B2 U2 B2 F2 L1 D3 L2
+Finished searching depth 7 pos 10 in 20 probes 6 evals.
+Finished searching depth 8 pos 10 in 88 probes 25 evals.
+Finished searching depth 9 pos 10 in 227 probes 59 evals.
+Finished searching depth 10 pos 10 in 623 probes 158 evals.
+Finished searching depth 11 pos 10 in 8837 probes 2346 evals.
+Finished searching depth 12 pos 10 in 76082 probes 20333 evals.
+Finished searching depth 13 pos 10 in 723621 probes 187439 evals.
+Finished searching depth 14 pos 10 in 5716857 probes 1534869 evals.
+Finished searching depth 15 pos 10 in 50424595 probes 13838622 evals.
+Finished searching depth 16 pos 10 in 457604270 probes 127566487 evals.
+Finished searching depth 17 pos 10 in 1829555171 probes 505600405 evals.
+Solved 10 in 17 probes 1829555171 evals 505600405 time 176.283
+ D3 F2 U3 B2 R2 U3 R3 U3 R1 F2 R3 U1 R3 F2 B2 R2 F2
+Finished searching depth 9 pos 11 in 36 probes 14 evals.
+Finished searching depth 10 pos 11 in 202 probes 74 evals.
+Finished searching depth 11 pos 11 in 2955 probes 1100 evals.
+Finished searching depth 12 pos 11 in 29769 probes 10954 evals.
+Finished searching depth 13 pos 11 in 555208 probes 143704 evals.
+Finished searching depth 14 pos 11 in 4722776 probes 1251619 evals.
+Finished searching depth 15 pos 11 in 43133410 probes 11743214 evals.
+Finished searching depth 16 pos 11 in 402723508 probes 111812433 evals.
+Finished searching depth 17 pos 11 in 444020265 probes 123070888 evals.
+Solved 11 in 17 probes 444020265 evals 123070888 time 37.4604
+ D3 R2 U3 L2 F2 U2 B2 L2 D1 R3 L2 D1 L3 D2 R1 D3 L1
+Finished searching depth 9 pos 12 in 36 probes 14 evals.
+Finished searching depth 10 pos 12 in 198 probes 75 evals.
+Finished searching depth 11 pos 12 in 3079 probes 1166 evals.
+Finished searching depth 12 pos 12 in 30903 probes 11398 evals.
+Finished searching depth 13 pos 12 in 581679 probes 147971 evals.
+Finished searching depth 14 pos 12 in 4865335 probes 1274588 evals.
+Finished searching depth 15 pos 12 in 44316931 probes 11935572 evals.
+Finished searching depth 16 pos 12 in 412514809 probes 113425437 evals.
+Finished searching depth 17 pos 12 in 532253437 probes 145986984 evals.
+Solved 12 in 17 probes 532253437 evals 145986984 time 43.643
+ D2 L2 D2 B2 U1 L1 U3 R2 D1 R1 D2 R2 U3 B2 R3 U3 L1
+Finished searching depth 7 pos 13 in 24 probes 6 evals.
+Finished searching depth 8 pos 13 in 44 probes 14 evals.
+Finished searching depth 9 pos 13 in 102 probes 38 evals.
+Finished searching depth 10 pos 13 in 336 probes 129 evals.
+Finished searching depth 11 pos 13 in 5252 probes 1885 evals.
+Finished searching depth 12 pos 13 in 44764 probes 15862 evals.
+Finished searching depth 13 pos 13 in 695252 probes 184460 evals.
+Finished searching depth 14 pos 13 in 5756316 probes 1556200 evals.
+Finished searching depth 15 pos 13 in 50836787 probes 13990852 evals.
+Finished searching depth 16 pos 13 in 460716414 probes 128661135 evals.
+Finished searching depth 17 pos 13 in 790517142 probes 220840275 evals.
+Solved 13 in 17 probes 790517142 evals 220840275 time 59.4757
+ B2 L2 D3 L2 F2 U1 F2 B2 R1 U3 L1 D2 L3 U1 R1 U1 B2
+Finished searching depth 10 pos 14 in 235 probes 69 evals.
+Finished searching depth 11 pos 14 in 5298 probes 1584 evals.
+Finished searching depth 12 pos 14 in 45599 probes 13708 evals.
+Finished searching depth 13 pos 14 in 506831 probes 146826 evals.
+Finished searching depth 14 pos 14 in 4227047 probes 1212349 evals.
+Finished searching depth 15 pos 14 in 38357043 probes 11056454 evals.
+Finished searching depth 16 pos 14 in 359466826 probes 103910940 evals.
+Finished searching depth 17 pos 14 in 480249463 probes 138191412 evals.
+Solved 14 in 17 probes 480249463 evals 138191412 time 39.7363
+ U2 D2 R2 D3 F1 L2 B2 U2 F2 B3 R2 B2 L2 U2 B3 U1 B2

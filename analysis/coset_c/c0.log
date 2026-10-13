@@ -1,0 +1,24 @@
+coset word length 12, cell 11747723, d1 12
+depth  0  covered            0 / 19508428800  search sols 0 nodes 1  t=0s
+depth  1  covered            0 / 19508428800  search sols 0 nodes 1  t=13s
+depth  2  covered            0 / 19508428800  search sols 0 nodes 1  t=28s
+depth  3  covered            0 / 19508428800  search sols 0 nodes 1  t=42s
+depth  4  covered            0 / 19508428800  search sols 0 nodes 1  t=56s
+depth  5  covered            0 / 19508428800  search sols 0 nodes 1  t=71s
+depth  6  covered            0 / 19508428800  search sols 0 nodes 1  t=85s
+depth  7  covered            0 / 19508428800  search sols 0 nodes 1  t=100s
+depth  8  covered            0 / 19508428800  search sols 0 nodes 1  t=114s
+depth  9  covered            0 / 19508428800  search sols 0 nodes 1  t=128s
+depth 10  covered            0 / 19508428800  search sols 0 nodes 1  t=142s
+depth 11  covered            0 / 19508428800  search sols 0 nodes 1  t=156s
+depth 12  covered          688 / 19508428800  search sols 692 nodes 3848  t=171s
+depth 13  covered        24322 / 19508428800  search sols 18188 nodes 102474  t=187s
+depth 14  covered       546370 / 19508428800  search sols 345248 nodes 1974343  t=206s
+depth 15  covered     10379384 / 19508428800  search sols 6069668 nodes 34627229  t=242s
+depth 16  covered    179128588 / 19508428800  search sols 100803796 nodes 572165787  t=573s
+depth 17  covered   1440802152 / 19508428800  search sols 0 nodes 0  t=607s
+depth 18  covered   7752668766 / 19508428800  search sols 0 nodes 0  t=672s
+depth 19  covered  18698791616 / 19508428800  search sols 0 nodes 0  t=708s
+depth 20  covered  19508428544 / 19508428800  search sols 0 nodes 0  t=740s
+depth 21  covered  19508428800 / 19508428800  search sols 0 nodes 0  t=773s
+COSET BOUND 21

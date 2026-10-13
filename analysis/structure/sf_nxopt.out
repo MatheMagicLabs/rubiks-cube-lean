@@ -1,0 +1,15 @@
+This is ./nxopt21 metric HALF
+ ./nxopt21 -t 1 -s -
+Load nxopth21b.dat ....10....20....30....40....50....60....70....80....90....100 read in 24.6353
+Skipping 5 faces.
+Finished searching depth 7 pos 1 in 81 probes 31 evals.
+Finished searching depth 8 pos 1 in 610 probes 205 evals.
+Finished searching depth 9 pos 1 in 5430 probes 1648 evals.
+Finished searching depth 10 pos 1 in 31376 probes 9457 evals.
+Finished searching depth 11 pos 1 in 181956 probes 54348 evals.
+Finished searching depth 12 pos 1 in 930901 probes 278211 evals.
+Finished searching depth 13 pos 1 in 4387018 probes 1289544 evals.
+Finished searching depth 14 pos 1 in 24870405 probes 7327336 evals.
+Finished searching depth 15 pos 1 in 132069134 probes 38633170 evals.
+Finished searching depth 16 pos 1 in 800569048 probes 234704474 evals.
+Finished searching depth 17 pos 1 in 4865222986 probes 1425693154 evals.

@@ -1,0 +1,4 @@
+ORDER=1 SECOND=1
+sf rank 1568218569 d1 10
+bound 21 first 3: nodes 1429653180 leaves 5242190; words: len21=21
+bound 21 second 1 elapsed 6219 s
