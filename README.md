@@ -3,7 +3,7 @@
 Machine-checked bounds on the 3×3×3 Rubik's cube and related puzzles, in plain Lean 4 (no Mathlib).
 Large finite facts are proved by `native_decide` certificates; everything around them is ordinary Lean proof.
 
-Author: Vincent Weinreich (M.Sc. Mathematics, KIT).
+Author: Vincent Weinreich.
 
 ## Main results (half-turn metric, 18 face turns)
 
