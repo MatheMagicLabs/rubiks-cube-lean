@@ -1,7 +1,0 @@
-{"plugins": ["/root/cubelean/.lake/build/lib/lean/Cube_Model.so"],
- "options": {},
- "name": "Cube.Phase12",
- "isModule": false,
- "importArts":
- {"Cube.Model": ["/root/cubelean/.lake/build/lib/lean/Cube/Model.olean"]},
- "dynlibs": []}

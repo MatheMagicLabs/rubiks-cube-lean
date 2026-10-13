@@ -1,1 +1,0 @@
-{"version":4,"references":{"{\"c\":{\"n\":\"witnessTF\",\"m\":\"CubeG.WitnessT\"}}":{"usages":[[1,6,1,15]],"definition":null},"{\"c\":{\"n\":\"Unit.unit\",\"m\":\"Init.Prelude\"}}":{"usages":[[1,16,1,18]],"definition":null}},"module":"CubeP.WitnessTRun","directImports":[["CubeG.WitnessT",false,false,false]]}

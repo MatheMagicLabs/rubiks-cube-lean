@@ -1,1 +1,0 @@
-{"version":4,"references":{"{\"c\":{\"n\":\"diag2F\",\"m\":\"CubeH.Kph2\"}}":{"usages":[[1,6,1,12]],"definition":null},"{\"c\":{\"n\":\"Unit.unit\",\"m\":\"Init.Prelude\"}}":{"usages":[[1,13,1,15]],"definition":null}},"module":"CubeP.Kph2Diag","directImports":[["CubeH.Kph2",false,false,false]]}

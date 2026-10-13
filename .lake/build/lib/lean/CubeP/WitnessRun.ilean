@@ -1,1 +1,0 @@
-{"version":4,"references":{"{\"c\":{\"n\":\"witnessF\",\"m\":\"CubeG.Witness\"}}":{"usages":[[1,6,1,14]],"definition":null},"{\"c\":{\"n\":\"Unit.unit\",\"m\":\"Init.Prelude\"}}":{"usages":[[1,15,1,17]],"definition":null}},"module":"CubeP.WitnessRun","directImports":[["CubeG.Witness",false,false,false]]}
